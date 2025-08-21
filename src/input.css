@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+/* @source "/"; */
+
+@theme {
+        --color-black: #0a0a0a;
+        --color-green: #D8E9E7;
+        --color-gray: #F0F5F4;
+        --color-yellow: #FFC940;
+        --color-deep-blue: #4A72AC;
+        --color-text: #1b1b1b;
+        --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      
+        --breakpoint-sm: 480px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 1024px;
+        --breakpoint-xl: 1440px;
+
+         /* override the default body font */
+        --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        /* add custom tokens */
+        --font-heading: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+        --font-brand: "Inter", ui-sans-serif, system-ui;
+      }
+
+
+       /* Component Classes */
+      .wrapper {
+        @apply max-w-7xl mx-auto px-6 sm:px-6 lg:px-8;
+      }
+
+      .section {
+        @apply pt-16 lg:pt-20 lg:pb-20;
+      }
+       .section-no-pb {
+        @apply lg:pb-0;
+      }
+
+      /* Typography */
+      .h1 {
+        @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[--color-text];
+      }
+
+      .h2 {
+        @apply text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[--color-text];
+      }
+
+      .h3 {
+        @apply text-xl sm:text-2xl font-semibold text-[var(--color-text)];
+      }
+
+      .p {
+        @apply text-base sm:text-lg text-[var(--color-text)]/80 leading-relaxed;
+      }
+
+      .muted {
+        @apply text-sm text-[var(--color-text)]/60 uppercase tracking-wide font-medium;
+      }
+
+      /* Navigation */
+      .navlink {
+        @apply text-[var(--color-text)] hover:text-[var(--color-text)]/50 transition-colors duration-200 font-medium;
+      }
+
+      /* Buttons */
+      .btn {
+        @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+      }
+
+      .btn-primary {
+        @apply bg-[var(--color-yellow)] text-[var(--color-black)] hover:bg-[var(--color-yellow)]/90 focus:ring-[var(--color-yellow)];
+      }
+
+      .btn-outline {
+        @apply border border-[var(--color-text)]/20 text-[var(--color-text)] hover:bg-[var(--color-text)]/5;
+      }
+
+      /* Cards */
+      .card {
+        @apply bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200;
+      }
+
+      .card-body {
+        @apply p-6;
+      }
+
+       .section-hero {
+        position: relative;          /* create containing block for ::before */
+        isolation: isolate;        /* ensure ::before can sit behind content */
+        z-index: 2;
+      }
+      .section-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0%;
+        bottom: 12%;
+        left: 0;
+        background: var(--color-green);
+        border-radius: 0;
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      /* Images */
+      .img-hero {
+        @apply w-full h-[600px] sm:h-[500px] lg:h-[800px] object-cover rounded;
+        will-change: transform;
+      }
+      @media (min-width: 1440px) {
+        .img-hero {
+              margin-left: 2%;
+              width: 85%;
+              transform: none;
+        }
+      }
+
+      @media (min-width: var(--breakpoint-md)) {
+        .img-hero {
+          transform: translateX(-10rem);
+        }
+      }
+      @media (min-width: var(--breakpoint-md)) {
+        .img-hero {
+         margin-bottom: 0; /* reset on smaller screens */
+        margin-left: 0;
+        }
+      }
+
+      .img-about {
+        @apply w-full h-48 sm:h-56 lg:h-64 object-cover rounded-xl;
+      }
+
+      .img-event {
+        @apply w-full h-48 object-cover;
+      }
+
+      .img-post {
+        @apply w-full h-48 object-cover;
+      }
+
+      .img-cta {
+        @apply w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover;
+      }
+
+    /* Section background offset without changing layout */
+      .section-about {
+        position: relative;          /* create containing block for ::before */
+        isolation: isolate;   
+        padding-bottom:2rem;       /* ensure ::before can sit behind content */
+      }
+      .section-about::before {
+        content: "";
+        position: absolute;
+        top: -30%;
+        right: 40%;
+        bottom: 0;
+        left: 0;
+        background: var(--color-gray);
+        border-radius: 0;
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      @media (min-width: 1250px) {
+        .section-about::before {
+          right: 36%;
+        }
+      }
+
+      @media (max-width: 1249px) {
+        .section-about::before {
+          right: 25%;
+        }
+      }
+
+      /* Tweak offsets on smaller screens to avoid clipping */
+      @media (max-width: 1023px) {
+        .section-about::before {
+          top: 0;
+          right: 0;
+        }
+      }
+
+
+      /* Header */
+      .header-bg {
+        @apply bg-[var(--color-green)];
+      }
+
+      /* Footer */
+      .footer-band {
+        @apply bg-gradient-to-r from-[var(--color-deep-blue)] to-blue-600;
+      }
+
+      .footer-link {
+        @apply text-white/70 hover:text-white transition-colors duration-200 text-sm;
+      }
+
+      /* Form Elements */
+      .input {
+        @apply w-full px-4 py-3 rounded-full border border-white/20 bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent;
+      }
+
+      /* Mobile Menu */
+      [data-menu] {
+        @apply transition-all duration-300 ease-in-out;
+      }
+
+      [data-menu].hidden {
+        @apply opacity-0 max-h-0 overflow-hidden;
+      }
+
+      [data-menu]:not(.hidden) {
+        @apply opacity-100 max-h-96;
+      }
