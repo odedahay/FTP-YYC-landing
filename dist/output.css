@@ -20,8 +20,6 @@
     --container-2xl: 42rem;
     --container-4xl: 56rem;
     --container-7xl: 80rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -477,20 +475,6 @@
       margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .space-x-3 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
-  .space-x-8 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
   .self-end {
     align-self: flex-end;
   }
@@ -652,29 +636,8 @@
   .pt-40 {
     padding-top: calc(var(--spacing) * 40);
   }
-  .pr-8 {
-    padding-right: calc(var(--spacing) * 8);
-  }
-  .pr-10 {
-    padding-right: calc(var(--spacing) * 10);
-  }
-  .pr-12 {
-    padding-right: calc(var(--spacing) * 12);
-  }
-  .pr-15 {
-    padding-right: calc(var(--spacing) * 15);
-  }
   .pr-16 {
     padding-right: calc(var(--spacing) * 16);
-  }
-  .pr-18 {
-    padding-right: calc(var(--spacing) * 18);
-  }
-  .pr-19 {
-    padding-right: calc(var(--spacing) * 19);
-  }
-  .pr-20 {
-    padding-right: calc(var(--spacing) * 20);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -722,10 +685,6 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-xs {
-    font-size: var(--text-xs);
-    line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
@@ -757,9 +716,6 @@
   .break-normal {
     overflow-wrap: normal;
     word-break: normal;
-  }
-  .break-keep {
-    word-break: keep-all;
   }
   .text-\[--color-black\] {
     color: --color-black;
@@ -1096,21 +1052,6 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
-  .md\:col-span-2 {
-    @media (width >= 768px) {
-      grid-column: span 2 / span 2;
-    }
-  }
-  .md\:col-span-full {
-    @media (width >= 768px) {
-      grid-column: 1 / -1;
-    }
-  }
-  .md\:mr-20 {
-    @media (width >= 768px) {
-      margin-right: calc(var(--spacing) * 20);
-    }
-  }
   .md\:mb-0 {
     @media (width >= 768px) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -1141,49 +1082,9 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-20 {
-    @media (width >= 768px) {
-      grid-template-columns: repeat(20, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-cols-\[1\.6fr_1fr_1fr_1fr\] {
-    @media (width >= 768px) {
-      grid-template-columns: 1.6fr 1fr 1fr 1fr;
-    }
-  }
-  .md\:grid-cols-\[4\] {
-    @media (width >= 768px) {
-      grid-template-columns: 4;
-    }
-  }
-  .md\:grid-cols-\[4fr_1fr_1fr_1fr\] {
-    @media (width >= 768px) {
-      grid-template-columns: 4fr 1fr 1fr 1fr;
-    }
-  }
   .md\:bg-blue-200 {
     @media (width >= 768px) {
       background-color: var(--color-blue-200);
-    }
-  }
-  .md\:pr-20 {
-    @media (width >= 768px) {
-      padding-right: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:pr-70 {
-    @media (width >= 768px) {
-      padding-right: calc(var(--spacing) * 70);
-    }
-  }
-  .md\:pr-72 {
-    @media (width >= 768px) {
-      padding-right: calc(var(--spacing) * 72);
-    }
-  }
-  .md\:pr-720 {
-    @media (width >= 768px) {
-      padding-right: calc(var(--spacing) * 720);
     }
   }
   .lg\:mt-16 {
@@ -1801,11 +1702,6 @@ h1.hero::before {
   inherits: false;
   initial-value: 0;
 }
-@property --tw-space-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -2015,7 +1911,6 @@ h1.hero::before {
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
-      --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
