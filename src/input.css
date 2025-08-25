@@ -57,7 +57,7 @@
           transform: translate(-50%, -50%);
           width: 800px;
           height: 800px;
-          background: url('/src/images/glow-effect.png') no-repeat bottom center;
+          background: url('./images/glow-effect.png') no-repeat bottom center;
           background-size: contain;
           pointer-events: none;
           z-index: -1; /* Ensure it sits behind the text */

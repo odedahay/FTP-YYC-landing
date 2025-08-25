@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
 
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
   <title>FTP-YYC | Filipino Tech Professionals of YYC</title>
 </head>
 
@@ -23,7 +23,7 @@
 
       <nav class="flex items-center justify-between font-bold">
         <a href="#" class="flex items-center gap-2">
-          <img src="/src/images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
+          <img src="./images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
         </a>
 
         <div class="hidden md:flex items-center gap-8 uppercase">
@@ -126,14 +126,17 @@
         </a>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         <!-- Event Card -->
+
         <article class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="flex gap-2">
-            <img class="w-[180] h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+          <div class="flex flex-col sm:flex-row gap-0 sm:gap-3">
+
+            <img class="w-full sm:w-[240px] h-48 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-300 shrink-0"
               src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
               alt="Tech Workshop" />
-            <div class="p-6">
+
+            <div class="p-4 sm:p-6 flex-1">
               <h3 class="text-xl sm:text-2xl font-semibold text-[var(--color-text)] mb-2">Tech Workshop</h3>
               <p class="text-sm text-[var(--color-text)]/60 uppercase tracking-wide font-medium mb-4">Unesco Convention
                 Hall · 5:00 PM – 7:30 PM</p>
@@ -149,15 +152,15 @@
         </article>
 
         <article class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="flex gap-2">
-            <img class="w-[180] h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+          <div class="flex flex-col sm:flex-row gap-0 sm:gap-3">
+            <img class="w-full sm:w-[240px] h-48 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-300 shrink-0"
               src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
               alt="Interview Panel Discussion" />
-            <div class="p-6">
+            <div class="p-4 sm:p-6 flex-1">
               <h3 class="text-xl sm:text-2xl font-semibold text-[var(--color-text)] mb-2">Interview Panel Discussion
               </h3>
               <p class="text-sm text-[var(--color-text)]/60 uppercase tracking-wide font-medium mb-4">Unesco Convention
-                Hall · 5:00 PM – 7:30 PM</p>
+                Hall · 5:00 PM - 7:30 PM</p>
               <a href="#"
                 class="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-text)]/70 transition-colors duration-200">
                 Read Details
@@ -172,7 +175,7 @@
 
         <article class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
           <div class="flex gap-2">
-            <img class="w-[180] h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+            <img class="w-full sm:w-[240px] h-48 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-300 shrink-0"
               src="https://images.unsplash.com/photo-1559223607-b4d0555ae227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
               alt="Interview Panel Discussion" />
             <div class="p-6">
@@ -194,7 +197,7 @@
 
         <article class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
           <div class="flex gap-2">
-            <img class="w-[180] h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+            <img class="w-full sm:w-[240px] h-48 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-300 shrink-0"
               src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
               alt="Interview Panel Discussion" />
             <div class="p-6">
@@ -218,7 +221,7 @@
   </section>
 
   <!-- CTA band -->
-  <section class="section">
+  <section class="section mb-12 md:mb-0">
     <div class="wrapper">
       <div class="relative overflow-hidden rounded-2xl min-h-[500px] lg:min-h-[600px]">
         <img class="absolute inset-0 w-full h-full object-cover"
@@ -226,7 +229,7 @@
           alt="Community gathering" />
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
         <div class="relative z-10 flex items-center min-h-[500px] lg:min-h-[600px]">
-          <div class="px-8 sm:px-12 lg:px-16 max-w-4xl">
+          <div class="px-8 py-12 sm:px-12 lg:px-16 max-w-4xl">
             <h2
               class="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight mb-6">
               One Community, Shared Dreams
@@ -251,7 +254,7 @@
   </section>
 
   <!-- Insights -->
-  <section class="section bg-[var(--color-green)]">
+  <section class="section bg-[var(--color-green)] pb-12 md:mb-0">
     <div class="wrapper">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold tracking-tight text-[var(--color-text)]">Insights</h2>
@@ -328,7 +331,7 @@
   </section>
 
   <!-- Connect band -->
-  <section class="section footer-band">
+  <section class="section footer-band pb-12 md:mb-0">
     <div class="wrapper grid lg:grid-cols-2 gap-8 items-center">
       <div>
         <h2 class="text-white text-2xl sm:text-3xl font-bold mb-3">Let's Connect</h2>
@@ -370,15 +373,10 @@
 
   <!-- Footer -->
   <footer class="bg-neutral-950 text-white">
-    <div class="wrapper py-12 grid md:grid-cols-4 gap-8">
-      <div class="space-y-4">
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-[var(--color-yellow)] rounded-full flex items-center justify-center">
-            <span class="text-[var(--color-black)] font-bold text-sm">FTP</span>
-          </div>
-          <span class="font-bold text-lg text-white">FTP-YYC</span>
-        </div>
-        <p class="text-sm text-white/70 leading-relaxed">
+    <div class="wrapper py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="space-y-4 pr-16">
+        <img src="./images/footer-logo.png" alt="FTP-YYC Logo" class="w-[180px] h-auto">
+        <p class="text-sm text-white/70 leading-relaxed break-normal">
           Filipino Tech Professionals of YYC (FTP-YYC) is a volunteer-led community empowering Filipino tech
           professionals in Calgary, Canada.
         </p>
@@ -438,6 +436,6 @@
   // This script is just to ensure Tailwind CSS is loaded correctly
   console.log('Tailwind CSS is ready to use!');
 </script>
-<script src="/src/js/script.js"></script>
+<script src="./js/script.js"></script>
 
 </html>
