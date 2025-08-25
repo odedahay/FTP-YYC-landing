@@ -1,11 +1,14 @@
 // Mobile menu toggle
-const menuBtn = document.querySelector('[data-menu-btn]');
-const menu = document.querySelector('[data-menu]');
-if (menuBtn && menu) {
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+if(menuBtn && menu){
   menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
     menu.classList.toggle('hidden');
   });
 }
+
 
 // Header shadow on scroll
 const header = document.querySelector('[data-header]');
