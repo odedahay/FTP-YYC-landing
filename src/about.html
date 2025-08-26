@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>FTP-YYC | Filipino Tech Professionals of YYC</title>
+</head>
+
+<body class="font-sans text-[var(--color-text)] bg-white">
+
+
+    <!-- Header -->
+    <header class="header-bg" data-header>
+        <div class="wrapper pt-12 pb-5">
+
+            <nav class="flex items-center justify-between font-bold">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="./images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
+                </a>
+
+                <div class="hidden md:flex items-center gap-8 uppercase">
+                    <a class="navlink text-sm cursor-pointer" href="index.html">Home</a>
+                    <a class="navlink text-sm cursor-pointer active" href="about.html">About Us</a>
+                    <a class="navlink text-sm cursor-pointer" href="events.html">Events</a>
+                    <a class="navlink text-sm cursor-pointer" href="insight-list.html">Insights</a>
+                    <a class="btn btn-primary text-sm px-5 py-2 cursor-pointer" href="contact.html">Connect</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-[99] block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="menu"
+            class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg uppercase bg-[var(--color-green-dark)]/99 z-40"
+            data-menu>
+            <div class="wrapper py-6 grid gap-4">
+                <a class="navlink text-base py-2" href="index.html">Home</a>
+                <a class="navlink text-base py-2" href="about.html">About Us</a>
+                <a class="navlink text-base py-2" href="events.html">Events</a>
+                <a class="navlink text-base py-2" href="insight-list.html">Insights</a>
+                <a class="btn btn-primary w-full justify-center mt-4" href="contact.html">Connect</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="inner-hero" class="section section-no-pb pt-8 lg:pt-12 lg:pb-0"
+        style="background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.5)), url('./images/band7.jpg')">
+        <div class="wrapper max-w-lg mt-16 md:mx-0 md:text-6xl">
+            <h1 class="inner-hero text-white pb-32">Serving the<br /> Community</h1>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-inner-about mt-0">
+        <div class="wrapper grid lg:grid-cols-[1fr_500px] gap-12 lg:gap-16 items-center">
+            <div class="max-w-prose">
+                <p class="muted mb-3">About Us</p>
+                <h2
+                    class="text-3xl sm:text-4xl lg:text-4xl font-bold tracking-tight text-[var(--color-text)] mb-6 leading-tight">
+                    The Unity Community is a volunteer service organization dedicated to enriching our community.
+                </h2>
+                <p class="text-base sm:text-lg text-[var(--color-text)]/70 leading-relaxed">
+                    We are a diverse group of professionals, students, and community members who believe in the power of
+                    collaboration and shared knowledge. Through our events, workshops, and networking opportunities, we
+                    create meaningful connections that help individuals and our community thrive.
+                </p>
+            </div>
+            <div class="mt-10">
+                <img class="w-full object-cover rounded-xl"
+                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    alt="Workshop session" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Split -->
+    <section class="section section-no-pb py-16 md:py-20">
+        <div class="wrapper">
+            <div class="grid lg:grid-cols-2 gap-0 rounded overflow-hidden">
+                <!-- Left: Info -->
+                <div class="bg-[var(--color-gray)] px-6 sm:px-10 lg:px-16 py-10 lg:py-14">
+                    <h2 class="text-3xl md:text-4xl font-bold leading-snug text-[var(--color-text)] mb-6 max-w-xl">Our
+                        Mission</h2>
+                    <div class="space-y-4 text-[var(--color-text)]/80 leading-relaxed max-w-xl mb-10">
+                        <p>We are dedicated to fostering a vibrant and inclusive
+                            community that empowers Filipino tech professionals
+                            and enthusiasts in Calgary to thrive, built on meaningful
+                            connections, mentorship, and collaboration.</p>
+                    </div>
+
+                  
+                </div>
+
+                <!-- Right: Form on green background -->
+                <div class="bg-[var(--color-green)] px-6 sm:px-10 lg:px-16 py-10 lg:py-14">
+                   <h2 class="text-3xl md:text-4xl font-bold leading-snug text-[var(--color-text)] mb-6 max-w-xl">Our
+                        Vision</h2>
+                    <div class="space-y-4 text-[var(--color-text)]/80 leading-relaxed max-w-xl mb-10">
+                        <p>We envision a future that showcases and celebrates an ecosystem 
+of innovation, expertise, and leadership that fully acknowledges 
+and values the impact of Filipino tech professionals, and cultivate 
+the next generation as we aspire to a future integral to the growth 
+and success of Calgary’s technology sector.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teams -->
+    <section class="section section-no-pb md:mb-0">
+        <div class="wrapper">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold tracking-tight text-[var(--color-text)]">Teams
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <article
+                    class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="./images/band1.jpg" alt="Community Leaders" />
+                    <div class="p-6">
+                        <h3 class="text-xl sm:text-2xl font-semibold text-[var(--color-text)] mb-3">Michael Reynolds
+                        </h3>
+                        <p class="text-base text-[var(--color-text)]/70 leading-relaxed mb-4">Co-Founder; Director</p>
+                        <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+                            href="#" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="./images/band2.jpg" alt="Tech Job Guide" />
+                    <div class="p-6">
+                        <h3 class="text-xl sm:text-2xl font-semibold text-[var(--color-text)] mb-3">janine dela Cruz
+                        </h3>
+                        <p class="text-base text-[var(--color-text)]/70 leading-relaxed mb-4">Co-Founder; VP,
+                            Partnerships</p>
+                        <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+                            href="#" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="./images/band6.jpg" alt="React AWS Guide" />
+                    <div class="p-6">
+                        <h3 class="text-xl sm:text-2xl font-semibold text-[var(--color-text)] mb-3">Rebecca Phillips
+                        </h3>
+                        <p class="text-base text-[var(--color-text)]/70 leading-relaxed mb-4">Co-Founder; VP, Technology
+                        </p>
+                        <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+                            href="#" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article
+                    class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="./images/band6.jpg" alt="React AWS Guide" />
+                    <div class="p-6">
+                        <h3 class="text-xl sm:text-2xl font-semibold text-[var(--color-text)] mb-3">Rhea</h3>
+                        <p class="text-base text-[var(--color-text)]/70 leading-relaxed mb-4">VP, Internal</p>
+                        <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+                            href="#" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article
+                    class="bg-white rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <img class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="./images/band7.jpg" alt="React AWS Guide" />
+                    <div class="p-6">
+                        <h3 class="text-xl sm:text-2xl font-semibold text-[var(--color-text)] mb-3">Rebecca Phillips
+                        </h3>
+                        <p class="text-base text-[var(--color-text)]/70 leading-relaxed mb-4">Volunteering Lead</p>
+                        <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+                            href="#" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="section mb-12 md:mb-0">
+        <div class="wrapper">
+            <div class="relative overflow-hidden rounded-2xl min-h-[500px] lg:min-h-[600px]">
+                <img class="absolute inset-0 w-full h-full object-cover"
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+                    alt="Community gathering" />
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+                <div class="relative z-10 flex items-center min-h-[500px] lg:min-h-[600px]">
+                    <div class="px-8 py-12 sm:px-12 lg:px-16 max-w-4xl">
+                        <h2
+                            class="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight mb-6">
+                            One Community, Shared Dreams
+                        </h2>
+                        <p class="text-white/90 text-lg sm:text-xl max-w-2xl mb-8 leading-relaxed">
+                            At Bayanihan, we bring Filipino heart and heritage to Calgary's vibrant tech scene. More
+                            than a
+                            community—we're a family fostering growth, leadership, and the collective wisdom of
+                            strengthening our
+                            roots. Take action to create purpose, collaborate with fellow newcomers, celebrate our
+                            culture, and help
+                            strengthen our bond through open doors, uplift spirits, and build bridges.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 bg-[var(--color-yellow)] text-[var(--color-black)] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[--color-yellow]/90 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-offset-2">
+                            Join FTP
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Connect band -->
+    <section class="section footer-band pb-12 md:mb-0">
+        <div class="wrapper grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-white text-2xl sm:text-3xl font-bold mb-3">Let's Connect</h2>
+                <p class="text-white/80 mb-6">Become part of our Bayanihan family.</p>
+                <div class="flex gap-4">
+                    <!-- <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+            href="#" aria-label="Instagram">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.315 0-.595-.122-.807-.315-.21-.21-.315-.49-.315-.807s.105-.595.315-.807c.21-.21.49-.315.807-.315s.595.105.807.315c.21.21.315.49.315.807s-.105.595-.315.807c-.21.193-.49.315-.807.315z" />
+            </svg>
+          </a> -->
+                    <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+                        href="#" aria-label="Facebook">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
+                        href="#" aria-label="LinkedIn">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <form class="grid sm:grid-cols-[1fr_auto] gap-3">
+                <input
+                    class="w-full px-4 py-3 rounded-full border border-white/20 bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent"
+                    type="email" placeholder="Enter your email address" />
+                <button
+                    class="inline-flex items-center gap-2 bg-[var(--color-yellow)] text-[var(--color-black)] px-6 py-3 rounded-full font-semibold transition-all duration-200 hover:bg-[var(--color-yellow)]/90 focus:outline-none focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-offset-2 justify-center"
+                    type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-white">
+        <div class="wrapper py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4 pr-16">
+                <img src="./images/footer-logo.png" alt="FTP-YYC Logo" class="w-[180px] h-auto">
+                <p class="text-sm text-white/70 leading-relaxed break-normal">
+                    Filipino Tech Professionals of YYC (FTP-YYC) is a volunteer-led community empowering Filipino tech
+                    professionals in Calgary, Canada.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-semibold mb-4 text-white">Quick Links</p>
+                <ul class="space-y-3">
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Home</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">About</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Events</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="font-semibold mb-4 text-white">Categories</p>
+                <ul class="space-y-3">
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 1</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 2</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 3</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 4</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 5</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="font-semibold mb-4 text-white">Recent Topics</p>
+                <ul class="space-y-3">
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm" href="#">Let's
+                            go with
+                            the game</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Immigration
+                            resources for newcomers 2022</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Important &
+                            Beneficial as we're focused for</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm" href="#">A list
+                            featuring
+                            in the distant bay</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10">
+            <div class="wrapper py-6 text-sm text-white/60">
+                © <span id="y"></span> FTP‑YYC. All rights reserved.
+            </div>
+        </div>
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+    </footer>
+</body>
+<script>
+    // This script is just to ensure Tailwind CSS is loaded correctly
+    console.log('Tailwind CSS is ready to use!');
+</script>
+<script src="./js/script.js"></script>
+
+</html>
