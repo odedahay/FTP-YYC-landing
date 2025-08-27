@@ -278,6 +278,9 @@
   .z-\[99\] {
     z-index: 99;
   }
+  .order-1 {
+    order: 1;
+  }
   .order-2 {
     order: 2;
   }
@@ -1447,6 +1450,11 @@
       order: 1;
     }
   }
+  .lg\:order-2 {
+    @media (width >= 1024px) {
+      order: 2;
+    }
+  }
   .lg\:col-span-1 {
     @media (width >= 1024px) {
       grid-column: span 1 / span 1;
@@ -1487,9 +1495,9 @@
       grid-template-columns: 2fr 1fr;
     }
   }
-  .lg\:grid-cols-\[500px_1fr\] {
+  .lg\:grid-cols-\[600px_1fr\] {
     @media (width >= 1024px) {
-      grid-template-columns: 500px 1fr;
+      grid-template-columns: 600px 1fr;
     }
   }
   .lg\:gap-8 {
