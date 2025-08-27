@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:title" content="FTP-YYC">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="https://ftp-yyc.ca/_assets/images/4b380ebad8d752fff4ec3abcce876896.png">
+    <link rel="icon" href="https://ftp-yyc.ca/_assets/images/7285e421d89fd2e8d95379cbeaef5141.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://ftp-yyc.ca/_assets/images/03a2d4db9323317d1b291bf04b390c5b.png"
+        sizes="180x180">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>FTP-YYC | Filipino Tech Professionals of YYC</title>
+</head>
+
+<body class="font-sans text-[var(--color-text)] bg-white">
+
+
+    <!-- Header -->
+    <header class="header-bg" data-header>
+        <div class="wrapper pt-12 pb-5">
+
+            <nav class="flex items-center justify-between font-bold">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="./images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
+                </a>
+
+                <div class="hidden md:flex items-center gap-8 uppercase">
+                    <a class="navlink text-sm cursor-pointer" href="index.html">Home</a>
+                    <a class="navlink text-sm cursor-pointer" href="about.html">About Us</a>
+                    <a class="navlink text-sm cursor-pointer active" href="events.html">Events</a>
+                    <a class="navlink text-sm cursor-pointer " href="insight-inner.html">Insights</a>
+                    <a class="btn btn-primary text-sm px-5 py-2 cursor-pointer" href="contact.html">Connect</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-[99] block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="menu"
+            class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg uppercase bg-[var(--color-green-dark)]/99 z-40"
+            data-menu>
+            <div class="wrapper py-6 grid gap-4">
+                <a class="navlink text-base py-2" href="index.html">Home</a>
+                <a class="navlink text-base py-2" href="about.html">About Us</a>
+                <a class="navlink text-base py-2" href="events.html">Events</a>
+                <a class="navlink text-base py-2" href="insight-list.html">Insights</a>
+                <a class="btn btn-primary w-full justify-center mt-4" href="contact.html">Connect</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <!-- <section id="inner-hero" class="section section-no-pb pt-8 lg:pt-12 lg:pb-0"
+        style="background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.45)), url('./images/band5.jpg')">
+        <div class="wrapper max-w-2xl mt-16 md:mx-0">
+            <h1 class="inner-hero text-white pb-32">Insights</h1>
+        </div>
+    </section> -->
+
+
+
+    <!-- Support Our Projects -->
+    <section class="section pt-12 lg:pt-16">
+        <div class="wrapper">
+            <div class="flex items-center justify-between">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-[var(--color-text)] mb-10 md:mb-12">
+                Event</h2>
+                <a href="events.html"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-text)]/70 hover:text-[var(--color-text)]">Back to Events List
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+            </div>
+            
+
+            <div class="px-0 grid lg:grid-cols-[2fr_1fr] gap-10 xl:gap-14">
+                <!-- Card 1 -->
+                <article class="space-y-4">
+                    <img class="w-full rounded"
+                        src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1600&auto=format&fit=crop"
+                        alt="Foosball" />
+
+                    <div>
+                        <div class="flex items-end gap-2">
+                            <!-- <div class="text-3xl md:text-4xl font-extrabold tracking-tight">$12,785</div>
+                            <div class="text-sm text-[var(--color-text)]/70">of $10,000 raised</div> -->
+
+                        </div>
+                    </div>
+                    <!-- 
+                    <h3 class="text-2xl font-semibold">General Club Donation</h3>
+                    <p class="text-[15px] leading-7 text-[var(--color-text)]/80">
+                        We are a non‑profit recreational organization. We currently operate throughout the whole town
+                        and district and we provide a variety of recreational facilities.
+                    </p>  -->
+                    <h2 class="text-3xl md:text-4xl font-bold leading-snug text-[var(--color-text)] mb-6">Samahan Sabado
+                        September Potluck Picnic</h2>
+                    <div class="space-y-4 text-[var(--color-text)]/80 leading-relaxed mb-10">
+                        <p>Please feel free to contact us via phone, email, or this form! We respect your privacy
+                            and
+                            will never share this information with a third party. If you’d like a walk‑in
+                            appointment,
+                            kindly call ahead to schedule. Thank you!</p>
+                    </div>
+
+                        <div class="group mb-8">
+                            <div
+                                class="uppercase mb-2 text-[var(--color-text)]/50 flex items-center gap-2 text-2xl md:text-3xl font-bold tracking-tight">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span class=" text-[var(--color-red)]"> Calgary Platform</span>
+                            </div>
+                            <div
+                                class="text-1xl font-semibold uppercase text-[var(--color-text)]/50 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar">
+                                    <path d="M8 2v4" />
+                                    <path d="M16 2v4" />
+                                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                                    <path d="M3 10h18" />
+                                </svg>
+                                <span class="text-[var(--color-text)]/80">
+                                    December 10, 2016 • 2pm to 5pm
+                                </span>
+                            </div>
+                        </div>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-3 rounded bg-neutral-900 text-white text-xs font-semibold tracking-wider hover:bg-neutral-950 transition w-max">Register
+                        Now</a>
+                </article>
+                <!-- Sidebar -->
+                <aside>
+                    <div class="bg-neutral-50 border border-neutral-200 rounded p-5">
+                        <!-- <p class="text-xs tracking-[0.18em] uppercase text-[var(--color-text)]/60 mb-5">Let's have a
+                            Event</p> -->
+
+                        <div class="group mb-8">
+                            <div
+                                class="uppercase mb-2 text-[var(--color-text)]/50 flex items-center gap-2 text-2xl md:text-3xl font-bold tracking-tight">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span class=" text-[var(--color-red)]"> Calgary Platform</span>
+                            </div>
+                            <div
+                                class="text-1xl font-semibold uppercase text-[var(--color-text)]/50 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar">
+                                    <path d="M8 2v4" />
+                                    <path d="M16 2v4" />
+                                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                                    <path d="M3 10h18" />
+                                </svg>
+                                <span class="text-[var(--color-text)]/80">
+                                    December 10, 2016 • 2pm to 5pm
+                                </span>
+                            </div>
+                        </div>
+                          <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-3 rounded border-neutral-500 border text-xs font-semibold tracking-wider hover:text-white hover:bg-neutral-900 transition w-max mb-10">Register
+                        Now</a>
+                        <ul class="space-y-3 text-sm">
+                            <li>If you have any question
+                                <a href="mailto:odedahay@yahoo.com" class="hover:underline">
+                                <div class="flex items-center mt-1">
+                                    <img src="./images/mail_24dp_icon.svg" alt="email icon" class="w-4 h-4 mr-1">
+                                    <div class="text-[11px] text-[var(--color-text)]/60">Please email us</div>
+                                </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </aside>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-white">
+        <div class="wrapper py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4 pr-16">
+                <img src="./images/footer-logo.png" alt="FTP-YYC Logo" class="w-[180px] h-auto">
+                <p class="text-sm text-white/70 leading-relaxed break-normal">
+                    Filipino Tech Professionals of YYC (FTP-YYC) is a volunteer-led community empowering Filipino tech
+                    professionals in Calgary, Canada.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-semibold mb-4 text-white">Quick Links</p>
+                <ul class="space-y-3">
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Home</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">About</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Events</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="font-semibold mb-4 text-white">Categories</p>
+                <ul class="space-y-3">
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 1</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 2</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 3</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 4</a>
+                    </li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Category 5</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="font-semibold mb-4 text-white">Recent Topics</p>
+                <ul class="space-y-3">
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm" href="#">Let's
+                            go with
+                            the game</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Immigration
+                            resources for newcomers 2022</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm"
+                            href="#">Important &
+                            Beneficial as we're focused for</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-colors duration-200 text-sm" href="#">A list
+                            featuring
+                            in the distant bay</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10">
+            <div class="wrapper py-6 text-sm text-white/60">
+                © <span id="y"></span> FTP‑YYC. All rights reserved.
+            </div>
+        </div>
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+    </footer>
+</body>
+<script>
+    // This script is just to ensure Tailwind CSS is loaded correctly
+    console.log('Tailwind CSS is ready to use!');
+</script>
+<script src="./js/script.js"></script>
+
+</html>

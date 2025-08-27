@@ -16,6 +16,7 @@
     --color-neutral-100: oklch(97% 0 0);
     --color-neutral-200: oklch(92.2% 0 0);
     --color-neutral-300: oklch(87% 0 0);
+    --color-neutral-500: oklch(55.6% 0 0);
     --color-neutral-800: oklch(26.9% 0 0);
     --color-neutral-900: oklch(20.5% 0 0);
     --color-neutral-950: oklch(14.5% 0 0);
@@ -329,6 +330,9 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -461,6 +465,9 @@
   .w-full {
     width: 100%;
   }
+  .w-max {
+    width: max-content;
+  }
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
@@ -517,6 +524,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
   }
   .items-start {
     align-items: flex-start;
@@ -655,6 +665,9 @@
   .border-neutral-300 {
     border-color: var(--color-neutral-300);
   }
+  .border-neutral-500 {
+    border-color: var(--color-neutral-500);
+  }
   .border-white\/10 {
     border-color: color-mix(in srgb, #fff 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -708,6 +721,9 @@
   }
   .bg-neutral-800 {
     background-color: var(--color-neutral-800);
+  }
+  .bg-neutral-900 {
+    background-color: var(--color-neutral-900);
   }
   .bg-neutral-900\/90 {
     background-color: color-mix(in srgb, oklch(20.5% 0 0) 90%, transparent);
@@ -782,6 +798,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -1140,6 +1159,13 @@
       }
     }
   }
+  .hover\:bg-neutral-950 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-neutral-950);
+      }
+    }
+  }
   .hover\:bg-white\/20 {
     &:hover {
       @media (hover: hover) {
@@ -1396,6 +1422,11 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .md\:mb-12 {
+    @media (width >= 768px) {
+      margin-bottom: calc(var(--spacing) * 12);
+    }
+  }
   .md\:flex {
     @media (width >= 768px) {
       display: flex;
@@ -1548,6 +1579,11 @@
   .lg\:pt-14 {
     @media (width >= 1024px) {
       padding-top: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:pt-16 {
+    @media (width >= 1024px) {
+      padding-top: calc(var(--spacing) * 16);
     }
   }
   .lg\:pb-0 {
