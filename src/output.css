@@ -23,6 +23,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-md: 768px;
+    --container-xs: 20rem;
+    --container-sm: 24rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
@@ -1290,6 +1292,11 @@
       height: 100%;
     }
   }
+  .sm\:w-80 {
+    @media (width >= 480px) {
+      width: calc(var(--spacing) * 80);
+    }
+  }
   .sm\:w-\[240px\] {
     @media (width >= 480px) {
       width: 240px;
@@ -1399,6 +1406,11 @@
   .md\:hidden {
     @media (width >= 768px) {
       display: none;
+    }
+  }
+  .md\:w-auto {
+    @media (width >= 768px) {
+      width: auto;
     }
   }
   .md\:grid-cols-2 {
