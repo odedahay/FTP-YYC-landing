@@ -7,7 +7,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-green-200: oklch(92.5% 0.084 155.995);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -279,6 +278,9 @@
   .z-\[99\] {
     z-index: 99;
   }
+  .order-2 {
+    order: 2;
+  }
   .container {
     width: 100%;
     @media (width >= 480px) {
@@ -387,6 +389,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -407,9 +412,6 @@
   }
   .h-48 {
     height: calc(var(--spacing) * 48);
-  }
-  .h-56 {
-    height: calc(var(--spacing) * 56);
   }
   .h-\[240px\] {
     height: 240px;
@@ -443,6 +445,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
   }
   .w-\[180px\] {
     width: 180px;
@@ -671,6 +676,12 @@
   .bg-\[var\(--color-gray\)\] {
     background-color: var(--color-gray);
   }
+  .bg-\[var\(--color-gray\)\]\/60 {
+    background-color: color-mix(in srgb, #F0F5F4 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-gray) 60%, transparent);
+    }
+  }
   .bg-\[var\(--color-green\)\] {
     background-color: var(--color-green);
   }
@@ -713,6 +724,12 @@
       background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
   }
+  .bg-white\/40 {
+    background-color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
   .bg-white\/80 {
     background-color: color-mix(in srgb, #fff 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -747,6 +764,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -954,6 +974,12 @@
   }
   .text-\[var\(--color-text\)\] {
     color: var(--color-text);
+  }
+  .text-\[var\(--color-text\)\]\/40 {
+    color: color-mix(in srgb, #1b1b1b 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-text) 40%, transparent);
+    }
   }
   .text-\[var\(--color-text\)\]\/50 {
     color: color-mix(in srgb, #1b1b1b 50%, transparent);
@@ -1416,6 +1442,11 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .lg\:order-1 {
+    @media (width >= 1024px) {
+      order: 1;
+    }
+  }
   .lg\:col-span-1 {
     @media (width >= 1024px) {
       grid-column: span 1 / span 1;
@@ -1454,6 +1485,11 @@
   .lg\:grid-cols-\[2fr_1fr\] {
     @media (width >= 1024px) {
       grid-template-columns: 2fr 1fr;
+    }
+  }
+  .lg\:grid-cols-\[500px_1fr\] {
+    @media (width >= 1024px) {
+      grid-template-columns: 500px 1fr;
     }
   }
   .lg\:gap-8 {
@@ -1509,6 +1545,12 @@
   .lg\:pb-20 {
     @media (width >= 1024px) {
       padding-bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:text-2xl {
+    @media (width >= 1024px) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .lg\:text-4xl {
