@@ -23,8 +23,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-md: 768px;
-    --container-xs: 20rem;
-    --container-sm: 24rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
@@ -2051,6 +2049,11 @@ h1.inner-hero {
 @media (max-width: 1249px) {
   .section-about::before {
     right: 25%;
+  }
+}
+@media (max-width: 758px) {
+  .section-about::before {
+    right: 0%;
   }
 }
 .section-inner-about {
