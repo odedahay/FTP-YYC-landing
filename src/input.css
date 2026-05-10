@@ -99,6 +99,61 @@
         @apply inline-block text-[var(--color-text)] hover:text-[var(--color-text)]/50 transition-colors duration-200 font-medium;
       }
 
+      .navlink-desktop,
+      .nav-dropdown-trigger {
+        @apply text-[18px] font-normal leading-none tracking-normal;
+      }
+
+      .nav-dropdown {
+        @apply relative;
+      }
+
+      .nav-dropdown-trigger {
+        @apply flex items-center gap-[5px] uppercase;
+      }
+
+      .nav-chevron {
+        width: 8px;
+        height: 8px;
+        border-right: 1.75px solid currentColor;
+        border-bottom: 1.75px solid currentColor;
+        transform: rotate(45deg) translateY(-2px);
+        transition: transform 0.2s ease;
+      }
+
+      .nav-dropdown-menu {
+        @apply invisible absolute left-1/2 top-full z-50 mt-4 grid min-w-56 -translate-x-1/2 gap-1 rounded-lg bg-white p-2 opacity-0 shadow-lg ring-1 ring-black/10 transition-all duration-200;
+      }
+
+      .nav-dropdown-menu::before {
+        content: "";
+        position: absolute;
+        top: -18px;
+        right: 0;
+        left: 0;
+        height: 18px;
+      }
+
+      .nav-dropdown-menu a {
+        @apply rounded-md px-4 py-3 text-sm font-medium normal-case text-[var(--color-text)] transition-colors duration-200 hover:bg-[var(--color-green)] focus:bg-[var(--color-green)] focus:outline-none;
+      }
+
+      .nav-dropdown:hover .nav-dropdown-menu,
+      .nav-dropdown:focus-within .nav-dropdown-menu,
+      .nav-dropdown.is-open .nav-dropdown-menu {
+        @apply visible mt-2 opacity-100;
+      }
+
+      .nav-dropdown:hover .nav-chevron,
+      .nav-dropdown:focus-within .nav-chevron,
+      .nav-dropdown.is-open .nav-chevron {
+        transform: rotate(225deg) translate(-2px, -2px);
+      }
+
+      .nav-join {
+        @apply rounded-lg px-[10px] py-[8px] text-[18px] font-normal leading-normal;
+      }
+
       .navlink.active {
         font-weight: 50;
         border-bottom: 2px solid var(--color-black);
@@ -108,6 +163,36 @@
 
       .navlink-mobile {
         @apply text-[var(--color-text)] hover:text-[var(--color-text)]/50 transition-colors duration-200 font-medium;
+      }
+
+      .mobile-dropdown {
+        @apply grid gap-2 py-2 text-base font-medium text-[var(--color-text)];
+      }
+
+      .mobile-dropdown summary {
+        @apply flex cursor-pointer list-none items-center justify-between py-2 uppercase;
+      }
+
+      .mobile-dropdown summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .mobile-dropdown summary::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg);
+        transition: transform 0.2s ease;
+      }
+
+      .mobile-dropdown[open] summary::after {
+        transform: rotate(225deg);
+      }
+
+      .mobile-dropdown a {
+        @apply ml-4 block py-1 text-sm normal-case text-[var(--color-text)]/80;
       }
 
       /* Buttons */
