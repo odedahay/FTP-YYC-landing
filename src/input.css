@@ -412,8 +412,16 @@
 
       /* Header */
       .header-bg {
-        @apply bg-[var(--color-green)] border-b border-[var(--color-green-dark)];
+        @apply sticky top-0 z-50 bg-[var(--color-green)] border-b border-[var(--color-green-dark)] transition-colors duration-300;
 
+      }
+
+      .header-bg .wrapper {
+        @apply w-full max-w-none;
+      }
+
+      .header-bg.is-scrolled {
+        @apply bg-white/80 backdrop-blur;
       }
 
       /* Footer */
@@ -423,6 +431,10 @@
 
       .footer-link {
         @apply text-white/70 hover:text-white transition-colors duration-200 text-sm;
+      }
+
+      .footer-figma-link {
+        @apply font-['Inter'] text-[16px] font-normal leading-6 tracking-[-0.3125px] text-[#99a1af] transition-colors duration-200 hover:text-white;
       }
 
       /* Form Elements */

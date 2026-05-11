@@ -51,8 +51,11 @@ document.addEventListener('keydown', (event) => {
 const header = document.querySelector('[data-header]');
 if (header) {
   const onScroll = () => {
-    if (window.scrollY > 8) header.classList.add('shadow-sm');
-    else header.classList.remove('shadow-sm');
+    if (window.scrollY > 8) {
+      header.classList.add('shadow-sm', 'is-scrolled');
+    } else {
+      header.classList.remove('shadow-sm', 'is-scrolled');
+    }
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
