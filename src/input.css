@@ -101,7 +101,7 @@
 
       .navlink-desktop,
       .nav-dropdown-trigger {
-        @apply text-[18px] font-normal leading-none tracking-normal;
+        @apply text-[1.125rem] font-normal leading-none tracking-normal;
       }
 
       .nav-dropdown {
@@ -135,7 +135,7 @@
       }
 
       .nav-dropdown-menu a {
-        @apply rounded-md px-4 py-3 text-sm font-medium normal-case text-[var(--color-text)] transition-colors duration-200 hover:bg-[var(--color-green)] focus:bg-[var(--color-green)] focus:outline-none;
+        @apply rounded-md px-4 py-3 text-[1.125rem] font-medium normal-case text-[var(--color-text)] transition-colors duration-200 hover:bg-[var(--color-green)] focus:bg-[var(--color-green)] focus:outline-none;
       }
 
       .nav-dropdown:hover .nav-dropdown-menu,
