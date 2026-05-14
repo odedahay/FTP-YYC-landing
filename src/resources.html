@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:title" content="FTP-YYC">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="https://ftp-yyc.ca/_assets/images/4b380ebad8d752fff4ec3abcce876896.png">
+    <link rel="icon" href="https://ftp-yyc.ca/_assets/images/7285e421d89fd2e8d95379cbeaef5141.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://ftp-yyc.ca/_assets/images/03a2d4db9323317d1b291bf04b390c5b.png"
+        sizes="180x180">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&family=Roboto:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Resources | FTP-YYC</title>
+</head>
+
+<body class="font-sans text-[var(--color-text)] bg-white">
+    <!-- Header -->
+    <header class="header-bg" data-header>
+        <div class="wrapper pt-12 pb-5">
+            <nav class="flex items-center justify-between font-bold">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="./images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
+                </a>
+
+                <div class="hidden md:flex items-center justify-center gap-6 uppercase">
+                    <a class="navlink navlink-desktop cursor-pointer" href="index.html">Home</a>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="navlink nav-dropdown-trigger cursor-pointer active" type="button"
+                            aria-expanded="false">
+                            <span>Community</span>
+                            <span class="nav-chevron" aria-hidden="true"></span>
+                        </button>
+                        <div class="nav-dropdown-menu" role="menu">
+                            <a href="about.html" role="menuitem">About Us</a>
+                            <a href="insight-list.html" role="menuitem">Insights</a>
+                            <a href="resources.html" role="menuitem">Resources</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+                            <span>Collaborate</span>
+                            <span class="nav-chevron" aria-hidden="true"></span>
+                        </button>
+                        <div class="nav-dropdown-menu" role="menu">
+                            <a href="contact.html" role="menuitem">Volunteer</a>
+                            <a href="contact.html" role="menuitem">Partnership</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+                            <span>Contribute</span>
+                            <span class="nav-chevron" aria-hidden="true"></span>
+                        </button>
+                        <div class="nav-dropdown-menu" role="menu">
+                            <a href="contact.html" role="menuitem">Mentor</a>
+                            <a href="contact.html" role="menuitem">Become a Sponsor</a>
+                        </div>
+                    </div>
+
+                    <a class="navlink navlink-desktop cursor-pointer" href="events.html">Events</a>
+                    <a class="btn btn-primary nav-join cursor-pointer" href="contact.html">Join Us</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-[99] block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="menu"
+            class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg uppercase bg-[var(--color-green-dark)]/99 z-40"
+            data-menu>
+            <div class="wrapper py-6 grid gap-4">
+                <a class="navlink text-base py-2" href="index.html">Home</a>
+                <details class="mobile-dropdown" open>
+                    <summary>Community</summary>
+                    <a href="about.html">About Us</a>
+                    <a href="insight-list.html">Insights</a>
+                    <a href="resources.html">Resources</a>
+                </details>
+                <details class="mobile-dropdown">
+                    <summary>Collaborate</summary>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html">Volunteer</a>
+                    <a href="contact.html">Partner</a>
+                </details>
+                <details class="mobile-dropdown">
+                    <summary>Contribute</summary>
+                    <a href="contact.html">Mentor</a>
+                    <a href="contact.html">Become a Sponsor</a>
+                </details>
+                <a class="navlink text-base py-2" href="events.html">Events</a>
+                <a class="btn btn-primary w-full justify-center mt-4" href="contact.html">Join Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+        class="relative flex min-h-[420px] items-center overflow-hidden py-10 text-white sm:min-h-[480px] lg:min-h-[480px]">
+        <img class="absolute inset-0 h-full w-full object-cover object-center" src="./images/resources-hero-figma.jpg"
+            alt="Person reading a book in a community learning setting">
+        <div class="absolute inset-0 bg-[rgba(34,34,34,0.65)]"></div>
+
+        <div class="wrapper relative z-10 w-full">
+            <div class="max-w-[753px]">
+                <h1
+                    class="max-w-[679px] font-['Special_Gothic_Expanded_One'] text-[42px] leading-[1.2] tracking-normal text-white sm:text-[55px]">
+                    Community Resources
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources List -->
+    <main class="pt-[50px] pb-[60px]">
+        <div class="wrapper">
+            <h2 class="mb-12 text-[36px] font-bold leading-[1.2] tracking-[-0.396px] text-black">
+                Community Resources
+            </h2>
+
+            <div class="grid gap-[10px] md:grid-cols-2">
+                <a href="#"
+                    class="group rounded-[8px] bg-[rgba(230,240,238,0.4)] px-5 py-10 text-black transition-colors duration-200 hover:bg-[rgba(216,233,231,0.75)]">
+                    <div class="mb-[10px] flex items-start gap-[10px]">
+                        <div class="flex min-w-0 flex-1 items-center gap-[10px]">
+                            <img src="./images/resources-card-icon.svg" alt="" class="size-6 shrink-0">
+                            <h3 class="text-[24px] font-medium leading-[1.5] tracking-[-0.264px]">
+                                Title of the Resources
+                            </h3>
+                        </div>
+                        <img src="./images/resources-link-icon.svg" alt="" class="size-8 shrink-0 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    </div>
+                    <p class="text-[18px] leading-[1.5] tracking-[-0.198px]">
+                        There are many important elements to effective philanthropy, but a critical and sometimes
+                        overlooked element is the human one.
+                    </p>
+                </a>
+
+                <a href="#"
+                    class="group rounded-[8px] bg-[rgba(230,240,238,0.4)] px-5 py-10 text-black transition-colors duration-200 hover:bg-[rgba(216,233,231,0.75)]">
+                    <div class="mb-[10px] flex items-start gap-[10px]">
+                        <div class="flex min-w-0 flex-1 items-center gap-[10px]">
+                            <img src="./images/resources-card-icon.svg" alt="" class="size-6 shrink-0">
+                            <h3 class="text-[24px] font-medium leading-[1.5] tracking-[-0.264px]">
+                                Title of the Resources
+                            </h3>
+                        </div>
+                        <img src="./images/resources-link-icon.svg" alt="" class="size-8 shrink-0 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    </div>
+                    <p class="text-[18px] leading-[1.5] tracking-[-0.198px]">
+                        There are many important elements to effective philanthropy, but a critical and sometimes
+                        overlooked element is the human one.
+                    </p>
+                </a>
+
+                <a href="#"
+                    class="group rounded-[8px] bg-[rgba(230,240,238,0.4)] px-5 py-10 text-black transition-colors duration-200 hover:bg-[rgba(216,233,231,0.75)]">
+                    <div class="mb-[10px] flex items-start gap-[10px]">
+                        <div class="flex min-w-0 flex-1 items-center gap-[10px]">
+                            <img src="./images/resources-card-icon.svg" alt="" class="size-6 shrink-0">
+                            <h3 class="text-[24px] font-medium leading-[1.5] tracking-[-0.264px]">
+                                Title of the Resources
+                            </h3>
+                        </div>
+                        <img src="./images/resources-link-icon.svg" alt="" class="size-8 shrink-0 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    </div>
+                    <p class="text-[18px] leading-[1.5] tracking-[-0.198px]">
+                        There are many important elements to effective philanthropy, but a critical and sometimes
+                        overlooked element is the human one.
+                    </p>
+                </a>
+
+                <a href="#"
+                    class="group rounded-[8px] bg-[rgba(230,240,238,0.4)] px-5 py-10 text-black transition-colors duration-200 hover:bg-[rgba(216,233,231,0.75)]">
+                    <div class="mb-[10px] flex items-start gap-[10px]">
+                        <div class="flex min-w-0 flex-1 items-center gap-[10px]">
+                            <img src="./images/resources-card-icon.svg" alt="" class="size-6 shrink-0">
+                            <h3 class="text-[24px] font-medium leading-[1.5] tracking-[-0.264px]">
+                                Title of the Resources
+                            </h3>
+                        </div>
+                        <img src="./images/resources-link-icon.svg" alt="" class="size-8 shrink-0 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    </div>
+                    <p class="text-[18px] leading-[1.5] tracking-[-0.198px]">
+                        There are many important elements to effective philanthropy, but a critical and sometimes
+                        overlooked element is the human one.
+                    </p>
+                </a>
+
+                <a href="#"
+                    class="group rounded-[8px] bg-[rgba(230,240,238,0.4)] px-5 py-10 text-black transition-colors duration-200 hover:bg-[rgba(216,233,231,0.75)]">
+                    <div class="mb-[10px] flex items-start gap-[10px]">
+                        <div class="flex min-w-0 flex-1 items-center gap-[10px]">
+                            <img src="./images/resources-card-icon.svg" alt="" class="size-6 shrink-0">
+                            <h3 class="text-[24px] font-medium leading-[1.5] tracking-[-0.264px]">
+                                Title of the Resources
+                            </h3>
+                        </div>
+                        <img src="./images/resources-link-icon.svg" alt="" class="size-8 shrink-0 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    </div>
+                    <p class="text-[18px] leading-[1.5] tracking-[-0.198px]">
+                        There are many important elements to effective philanthropy, but a critical and sometimes
+                        overlooked element is the human one.
+                    </p>
+                </a>
+
+                <a href="#"
+                    class="group rounded-[8px] bg-[rgba(230,240,238,0.4)] px-5 py-10 text-black transition-colors duration-200 hover:bg-[rgba(216,233,231,0.75)]">
+                    <div class="mb-[10px] flex items-start gap-[10px]">
+                        <div class="flex min-w-0 flex-1 items-center gap-[10px]">
+                            <img src="./images/resources-card-icon.svg" alt="" class="size-6 shrink-0">
+                            <h3 class="text-[24px] font-medium leading-[1.5] tracking-[-0.264px]">
+                                Title of the Resources
+                            </h3>
+                        </div>
+                        <img src="./images/resources-link-icon.svg" alt="" class="size-8 shrink-0 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    </div>
+                    <p class="text-[18px] leading-[1.5] tracking-[-0.198px]">
+                        There are many important elements to effective philanthropy, but a critical and sometimes
+                        overlooked element is the human one.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#101828] py-16 text-white">
+        <div class="wrapper flex flex-col gap-6">
+            <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-[272px_repeat(4,190px)] xl:gap-7">
+                <div class="flex flex-col gap-6 xl:h-[235px]">
+                    <img src="./images/footer-figma-logo.png" alt="FTP-YYC Logo" class="h-[37px] w-[189px] object-contain">
+                    <p class="font-['Inter'] text-[14px] font-normal leading-[1.4] tracking-[-0.154px] text-[#99a1af]">
+                        Filipino Tech Professionals of YYC (FTP-YYC) is a non-profit organization dedicated to supporting and
+                        empowering Filipino professionals and advocates within the technology industry in Calgary, Canada.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Organizations
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="about.html">About Us</a></li>
+                        <li><a class="footer-figma-link" href="about.html#mission">Mission &amp; Values</a></li>
+                        <li><a class="footer-figma-link" href="about.html#team">Our Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Registration
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="contact.html">Join Now</a></li>
+                        <li><a class="footer-figma-link" href="contact.html">Membership</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Get Involved
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="contact.html">Volunteer</a></li>
+                        <li><a class="footer-figma-link" href="contact.html">Sponsor</a></li>
+                        <li><a class="footer-figma-link" href="contact.html">Partner</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Legal Stuff
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="#">Disclaimer</a></li>
+                        <li><a class="footer-figma-link" href="#">Financing</a></li>
+                        <li><a class="footer-figma-link" href="#">Privacy Policy</a></li>
+                        <li><a class="footer-figma-link" href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                <div class="flex flex-wrap items-center gap-[14px]">
+                    <p class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-[#ffc940]">
+                        Let's Connect!
+                    </p>
+                    <div class="flex h-10 items-center justify-center gap-4">
+                        <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]"
+                            href="#" aria-label="Facebook">
+                            <img src="./images/footer-social-facebook.svg" alt="" class="size-5">
+                        </a>
+                        <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]"
+                            href="#" aria-label="LinkedIn">
+                            <img src="./images/footer-social-linkedin.svg" alt="" class="size-5">
+                        </a>
+                        <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]"
+                            href="#" aria-label="Discord">
+                            <img src="./images/footer-social-discord.svg" alt="" class="size-5">
+                        </a>
+                    </div>
+                </div>
+
+                <form class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
+                    <label for="footer-email"
+                        class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">
+                        Stay updated
+                    </label>
+                    <div class="flex h-[42px] min-w-0 gap-2">
+                        <input id="footer-email"
+                            class="h-[42px] min-w-0 flex-1 rounded-[10px] border border-[#364153] bg-[#1e2939] px-4 py-2 font-['Inter'] text-[16px] font-normal tracking-[-0.3125px] text-white placeholder-white/50 outline-none transition-colors duration-200 focus:border-[#ffc940] sm:w-[190px]"
+                            type="email" placeholder="Enter your email" />
+                        <button
+                            class="h-[42px] w-[86px] shrink-0 rounded-[10px] bg-[#ffc940] font-['Inter'] text-[16px] font-medium leading-6 tracking-[-0.3125px] text-[#101828] transition-colors duration-200 hover:bg-[#ffd663]"
+                            type="submit">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="border-t border-[#1e2939] pt-[33px] text-center">
+                <p class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">
+                    © 2026 FTP-YYC. All rights reserved. | Privacy Policy | Acknowledgement
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
