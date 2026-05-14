@@ -117,25 +117,86 @@
         </div>
     </header>
 
-    <!-- Category Header -->
-    <section class="section section-no-pb pt-10 lg:pt-14 lg:pb-10">
-        <div class="wrapper items-start">
-            <!-- Left: Title + Intro stays in flow above the list on mobile -->
-            <div class="lg:col-span-1">
-                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">Events</h1>
-                <p class="text-[var(--color-text)]/70">Create a short description here. Good for SEO.</p>
-            </div>
+    <!-- Hero -->
+    <section
+        class="relative flex min-h-[420px] items-center overflow-hidden py-10 text-white sm:min-h-[480px] lg:min-h-[480px]">
+        <img class="absolute inset-0 h-full w-full object-cover object-center" src="./images/events-hero-figma.jpg"
+            alt="Filipino tech professionals gathered together and smiling">
+        <div class="absolute inset-0 bg-[linear-gradient(106.51deg,rgba(34,34,34,0.65)_49.31%,rgba(136,136,136,0.65)_75.61%)]">
+        </div>
 
+        <div class="wrapper relative z-10 w-full">
+            <div class="max-w-[753px]">
+                <h1
+                    class="max-w-[679px] font-['Special_Gothic_Expanded_One'] text-[42px] leading-[1.2] tracking-normal text-white sm:text-[55px]">
+                    Kamustahan with Filipino Tech Professionals
+                </h1>
+                <p
+                    class="mt-[10px] max-w-[679px] text-[16px] font-normal leading-[1.5] tracking-normal text-white sm:text-[18px]">
+                    To cultivate a dynamic platform with meaningful connections through networking events, shared
+                    resources, and career development, to build a supportive community for Filipino tech professionals
+                    in Calgary.
+                </p>
+
+                <div class="mt-6 flex flex-wrap items-center gap-[10px]">
+                    <a href="contact.html"
+                        class="inline-flex min-h-[44px] items-center rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black transition-colors duration-200 hover:bg-[#ffd663]">
+                        Register Now
+                    </a>
+                    <a href="event-inner.html"
+                        class="inline-flex min-h-[44px] items-center gap-[10px] rounded-[6px] border border-black/80 bg-white px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black transition-colors duration-200 hover:bg-white/90">
+                        View Details
+                        <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Posts + Sidebar -->
-    <section class="section pt-0">
+    <section class="section">
         <div class="wrapper items-start">
+            <div class="mb-12 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                <div class="flex max-w-full gap-1 overflow-x-auto pb-1" aria-label="Event categories" data-event-tabs>
+                    <button type="button" data-event-filter="all" aria-pressed="true"
+                        class="min-h-[62px] shrink-0 rounded-[8px] bg-[#2b73b4] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-white">
+                        All
+                    </button>
+                    <button type="button" data-event-filter="workshops" aria-pressed="false"
+                        class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+                        Workshops
+                    </button>
+                    <button type="button" data-event-filter="networking" aria-pressed="false"
+                        class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+                        Networking
+                    </button>
+                    <button type="button" data-event-filter="tech-talks" aria-pressed="false"
+                        class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+                        Tech Talks
+                    </button>
+                    <button type="button" data-event-filter="community" aria-pressed="false"
+                        class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+                        Community
+                    </button>
+                </div>
+
+                <form class="relative w-full lg:w-[280px]" role="search">
+                    <label for="event-search" class="sr-only">Search Events</label>
+                    <svg class="pointer-events-none absolute left-5 top-1/2 size-5 -translate-y-1/2 text-black"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <input id="event-search" type="search" placeholder="Search Events .." data-event-search
+                        class="h-[59px] w-full rounded-[8px] border border-black/15 bg-[#f7f7f8] py-3 pl-[62px] pr-4 text-[22px] font-normal leading-[1.5] tracking-[-0.242px] text-[#333333] outline-none placeholder:text-[#8f8f8f] focus:border-[#2b73b4] focus:ring-2 focus:ring-[#2b73b4]/20">
+                </form>
+            </div>
+
             <!-- Posts List -->
-            <div class="space-y-12">
+            <div class="space-y-12" data-event-list>
                 <!-- Row 1 -->
-                <article class="grid sm:grid-cols-[300px_1fr] gap-6">
+                <article class="grid sm:grid-cols-[300px_1fr] gap-6" data-event-card data-event-category="community">
                     <figure class="relative">
                         <img class="w-full h-24 overflow-hidden sm:h-full object-cover rounded"
                             src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?q=80&w=1600&auto=format&fit=crop"
@@ -188,7 +249,7 @@
                 </article>
 
                 <!-- Row 2 -->
-                <article class="grid sm:grid-cols-[300px_1fr] gap-6">
+                <article class="grid sm:grid-cols-[300px_1fr] gap-6" data-event-card data-event-category="community">
                     <figure class="relative overflow-hidden">
                         <img class="w-full h-36 sm:h-full object-cover rounded"
                             src="https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1600&auto=format&fit=crop"
@@ -243,7 +304,7 @@
                 </article>
 
                 <!-- Row 3 -->
-                <article class="grid sm:grid-cols-[300px_1fr] gap-6">
+                <article class="grid sm:grid-cols-[300px_1fr] gap-6" data-event-card data-event-category="workshops">
                     <figure class="relative">
                         <img class="w-full h-36 sm:h-full object-cover rounded"
                             src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
@@ -297,7 +358,7 @@
                 </article>
 
                 <!-- Row 4 -->
-                <article class="grid sm:grid-cols-[300px_1fr] gap-6">
+                <article class="grid sm:grid-cols-[300px_1fr] gap-6" data-event-card data-event-category="networking tech-talks">
                     <figure class="relative">
                         <img class="w-full h-36 sm:h-full object-cover rounded"
                             src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop"
