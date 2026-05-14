@@ -27,6 +27,7 @@ Preview: https://ftp-yyc-landing.vercel.app/
 │   ├── about.html
 │   ├── contact.html
 │   ├── events.html
+│   ├── resources.html
 │   ├── insight-list.html
 │   ├── insight-inner.html
 │   ├── event-inner.html
@@ -93,6 +94,7 @@ Recommended Vercel settings:
 - `src/index.html` - homepage
 - `src/about.html` - community, mission, and team page
 - `src/events.html` - events listing
+- `src/resources.html` - resources page
 - `src/contact.html` - join, volunteer, and partner page
 - `src/insight-list.html` - insights listing
 - `src/insight-inner.html` - insight detail page
