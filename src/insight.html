@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:title" content="FTP-YYC">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="https://ftp-yyc.ca/_assets/images/4b380ebad8d752fff4ec3abcce876896.png">
+  <link rel="icon" href="https://ftp-yyc.ca/_assets/images/7285e421d89fd2e8d95379cbeaef5141.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://ftp-yyc.ca/_assets/images/03a2d4db9323317d1b291bf04b390c5b.png"
+    sizes="180x180">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&family=Roboto:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <title>Insights | FTP-YYC</title>
+</head>
+
+<body class="font-sans text-[var(--color-text)] bg-white">
+  <!-- Header -->
+  <header class="header-bg" data-header>
+    <div class="wrapper pt-12 pb-5">
+      <nav class="flex items-center justify-between font-bold">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="./images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
+        </a>
+
+        <div class="hidden md:flex items-center justify-center gap-6 uppercase">
+          <a class="navlink navlink-desktop cursor-pointer" href="index.html">Home</a>
+
+          <div class="nav-dropdown" data-dropdown>
+            <button class="navlink nav-dropdown-trigger cursor-pointer active" type="button" aria-expanded="false">
+              <span>Community</span>
+              <span class="nav-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="about.html" role="menuitem">About Us</a>
+              <a href="insight.html" role="menuitem">Insights</a>
+              <a href="resources.html" role="menuitem">Resources</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown" data-dropdown>
+            <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+              <span>Collaborate</span>
+              <span class="nav-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="volunteer.html" role="menuitem">Volunteer</a>
+              <a href="partnership.html" role="menuitem">Partnership</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown" data-dropdown>
+            <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+              <span>Contribute</span>
+              <span class="nav-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="mentor.html" role="menuitem">Mentor</a>
+              <a href="become-a-sponsor.html" role="menuitem">Become a Sponsor</a>
+            </div>
+          </div>
+
+          <a class="navlink navlink-desktop cursor-pointer" href="events.html">Events</a>
+          <a class="btn btn-primary nav-join cursor-pointer" href="contact.html">Join Us</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="menu-btn" type="button" class="z-[99] block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="menu"
+      class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg uppercase bg-[var(--color-green-dark)]/99 z-40"
+      data-menu>
+      <div class="wrapper py-6 grid gap-4">
+        <a class="navlink text-base py-2" href="index.html">Home</a>
+        <details class="mobile-dropdown" open>
+          <summary>Community</summary>
+          <a href="about.html">About Us</a>
+          <a href="insight.html">Insights</a>
+          <a href="resources.html">Resources</a>
+        </details>
+        <details class="mobile-dropdown">
+          <summary>Collaborate</summary>
+          <a href="events.html">Events</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="Partner.html">Partnership</a>
+        </details>
+        <details class="mobile-dropdown">
+          <summary>Contribute</summary>
+          <a href="mentor.html">Mentor</a>
+          <a href="become-a-sponsor.html">Become a Sponsor</a>
+        </details>
+        <a class="navlink text-base py-2" href="events.html">Events</a>
+        <a class="btn btn-primary w-full justify-center mt-4" href="contact.html">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section
+    class="relative flex min-h-[420px] items-center overflow-hidden py-10 text-white sm:min-h-[480px] lg:min-h-[480px]">
+    <img class="absolute inset-0 h-full w-full object-cover object-center" src="./images/insight-hero-figma.png"
+      alt="Jane Doe writing in a bright shared workspace">
+    <div
+      class="absolute inset-0 bg-[linear-gradient(106.51deg,rgba(34,34,34,0.65)_49.31%,rgba(136,136,136,0.65)_75.61%)]">
+    </div>
+
+    <div class="wrapper relative z-10 w-full">
+      <div class="max-w-[753px]">
+        <h1
+          class="max-w-[679px] font-['Special_Gothic_Expanded_One'] text-[42px] leading-[1.2] tracking-normal text-white sm:text-[55px]">
+          Member Spotlight Jane Doe
+        </h1>
+        <p class="mt-[10px] max-w-[679px] text-[16px] font-normal leading-[1.5] tracking-normal text-white sm:text-[18px]">
+          Lorem ipsum dorem sectru, vitae vulputate. Lorem ipsum non ornarc in magna dorem magna.
+        </p>
+
+        <div class="mt-6 flex flex-wrap items-center gap-[10px]">
+          <a href="contact.html"
+            class="inline-flex min-h-[44px] items-center rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black transition-colors duration-200 hover:bg-[#ffd663]">
+            Register Now
+          </a>
+          <a href="insight-inner.html"
+            class="inline-flex min-h-[44px] items-center gap-[10px] rounded-[6px] border border-black/80 bg-white px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black transition-colors duration-200 hover:bg-white/90">
+            View Details
+            <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <main class="section">
+    <div class="wrapper">
+      <div class="mb-12 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex max-w-full gap-1 overflow-x-auto pb-1" aria-label="Insight topics" data-event-tabs>
+          <button type="button" data-event-filter="all" aria-pressed="true"
+            class="min-h-[62px] shrink-0 rounded-[8px] bg-[#2b73b4] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-white">
+            All
+          </button>
+          <button type="button" data-event-filter="tech" aria-pressed="false"
+            class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+            Tech
+          </button>
+          <button type="button" data-event-filter="career" aria-pressed="false"
+            class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+            Career
+          </button>
+          <button type="button" data-event-filter="community" aria-pressed="false"
+            class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+            Community
+          </button>
+          <button type="button" data-event-filter="stories" aria-pressed="false"
+            class="min-h-[62px] shrink-0 rounded-[8px] bg-[#f3f3f5] px-5 py-3 text-[22px] font-medium leading-[1.5] tracking-[-0.242px] text-[#333333] transition-colors duration-200 hover:bg-[#e9e9ec]">
+            Stories
+          </button>
+        </div>
+
+        <form class="relative w-full lg:w-[280px]" role="search">
+          <label for="insight-search" class="sr-only">Search Topics</label>
+          <svg class="pointer-events-none absolute left-5 top-1/2 size-5 -translate-y-1/2 text-black"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+          </svg>
+          <input id="insight-search" type="search" placeholder="Search Topics .." data-event-search
+            class="h-[59px] w-full rounded-[8px] border border-black/15 bg-[#f7f7f8] py-3 pl-[62px] pr-4 text-[22px] font-normal leading-[1.5] tracking-[-0.242px] text-[#333333] outline-none placeholder:text-[#8f8f8f] focus:border-[#2b73b4] focus:ring-2 focus:ring-[#2b73b4]/20">
+        </form>
+      </div>
+
+      <div class="space-y-12" data-event-list>
+        <div class="grid gap-5 lg:grid-cols-2">
+          <article class="overflow-hidden rounded-[8px] border border-black/15 bg-white" data-event-card data-event-category="tech">
+            <a href="insight-inner.html" class="block">
+              <figure class="relative h-[260px]">
+                <img class="h-full w-full object-cover" src="./images/insight-card-figma.jpg"
+                  alt="Podcast studio workspace">
+                <span class="absolute left-0 top-5 bg-[var(--color-red)] px-[10px] py-[5px] text-[18px] font-bold capitalize leading-[1.5] tracking-[-0.198px] text-white">Tech</span>
+              </figure>
+              <div class="p-5">
+                <h2 class="mb-[10px] text-[28px] font-semibold leading-[1.5] tracking-[-0.308px] text-black">
+                  Samahan Sabado September Potluck Picnic
+                </h2>
+                <p class="mb-5 text-[18px] leading-[1.5] tracking-[-0.198px] text-black">
+                  There are many important elements to effective philanthropy, but a critical and sometimes overlooked
+                  element is the human one.
+                </p>
+                <div class="mb-5 space-y-[6px] text-[12px] uppercase leading-[1.5] tracking-[-0.132px] text-black">
+                  <p class="capitalize">Michael Jay</p>
+                  <p>6 <span class="lowercase">min read</span></p>
+                </div>
+                <span
+                  class="inline-flex min-h-[44px] items-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black">
+                  Register
+                  <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="overflow-hidden rounded-[8px] border border-black/15 bg-white" data-event-card data-event-category="career">
+            <a href="insight-inner.html" class="block">
+              <figure class="relative h-[260px]">
+                <img class="h-full w-full object-cover" src="./images/insight-card-figma.jpg" alt="Podcast studio workspace">
+                <span class="absolute left-0 top-5 bg-[var(--color-red)] px-[10px] py-[5px] text-[18px] font-bold capitalize leading-[1.5] tracking-[-0.198px] text-white">Career</span>
+              </figure>
+              <div class="p-5">
+                <h2 class="mb-[10px] text-[28px] font-semibold leading-[1.5] tracking-[-0.308px] text-black">
+                  Samahan Sabado September Potluck Picnic
+                </h2>
+                <p class="mb-5 text-[18px] leading-[1.5] tracking-[-0.198px] text-black">
+                  There are many important elements to effective philanthropy, but a critical and sometimes overlooked
+                  element is the human one.
+                </p>
+                <div class="mb-5 space-y-[6px] text-[12px] uppercase leading-[1.5] tracking-[-0.132px] text-black">
+                  <p class="capitalize">Michael Jay</p>
+                  <p>6 <span class="lowercase">min read</span></p>
+                </div>
+                <span
+                  class="inline-flex min-h-[44px] items-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black">
+                  Register
+                  <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+                </span>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="overflow-hidden rounded-[8px] border border-black/15 bg-white" data-event-card data-event-category="tech">
+            <a href="insight-inner.html" class="block">
+              <figure class="relative h-[200px]">
+                <img class="h-full w-full object-cover" src="./images/insight-card-figma.jpg" alt="Podcast studio workspace">
+                <span class="absolute left-0 top-5 bg-[var(--color-red)] px-[10px] py-[5px] text-[18px] font-bold capitalize leading-[1.5] tracking-[-0.198px] text-white">Tech</span>
+              </figure>
+              <div class="flex min-h-[260px] flex-col justify-between gap-5 p-5">
+                <div>
+                  <h3 class="mb-5 text-[28px] font-semibold leading-[1.2] tracking-[-0.308px] text-black">Samahan Sabado September Potluck Picnic</h3>
+                  <div class="space-y-[6px] text-[12px] uppercase leading-[1.5] tracking-[-0.132px] text-black">
+                    <p class="capitalize">Michael Jay</p>
+                    <p>6 <span class="lowercase">min read</span></p>
+                  </div>
+                </div>
+                <span class="inline-flex min-h-[44px] w-max items-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black">
+                  Register
+                  <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="overflow-hidden rounded-[8px] border border-black/15 bg-white" data-event-card data-event-category="community">
+            <a href="insight-inner.html" class="block">
+              <figure class="relative h-[200px]">
+                <img class="h-full w-full object-cover" src="./images/insight-card-figma.jpg" alt="Podcast studio workspace">
+                <span class="absolute left-0 top-5 bg-[var(--color-red)] px-[10px] py-[5px] text-[18px] font-bold capitalize leading-[1.5] tracking-[-0.198px] text-white">Community</span>
+              </figure>
+              <div class="flex min-h-[260px] flex-col justify-between gap-5 p-5">
+                <div>
+                  <h3 class="mb-5 text-[28px] font-semibold leading-[1.2] tracking-[-0.308px] text-black">Samahan Sabado September Potluck Picnic</h3>
+                  <div class="space-y-[6px] text-[12px] uppercase leading-[1.5] tracking-[-0.132px] text-black">
+                    <p class="capitalize">Michael Jay</p>
+                    <p>6 <span class="lowercase">min read</span></p>
+                  </div>
+                </div>
+                <span class="inline-flex min-h-[44px] w-max items-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black">
+                  Register
+                  <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="overflow-hidden rounded-[8px] border border-black/15 bg-white" data-event-card data-event-category="stories">
+            <a href="insight-inner.html" class="block">
+              <figure class="relative h-[200px]">
+                <img class="h-full w-full object-cover" src="./images/insight-card-figma.jpg" alt="Podcast studio workspace">
+                <span class="absolute left-0 top-5 bg-[var(--color-red)] px-[10px] py-[5px] text-[18px] font-bold capitalize leading-[1.5] tracking-[-0.198px] text-white">Story</span>
+              </figure>
+              <div class="flex min-h-[260px] flex-col justify-between gap-5 p-5">
+                <div>
+                  <h3 class="mb-5 text-[28px] font-semibold leading-[1.2] tracking-[-0.308px] text-black">Samahan Sabado September Potluck Picnic</h3>
+                  <div class="space-y-[6px] text-[12px] uppercase leading-[1.5] tracking-[-0.132px] text-black">
+                    <p class="capitalize">Michael Jay</p>
+                    <p>6 <span class="lowercase">min read</span></p>
+                  </div>
+                </div>
+                <span class="inline-flex min-h-[44px] w-max items-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black">
+                  Register
+                  <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="overflow-hidden rounded-[8px] border border-black/15 bg-white" data-event-card data-event-category="tech">
+            <a href="insight-inner.html" class="block">
+              <figure class="relative h-[200px]">
+                <img class="h-full w-full object-cover" src="./images/insight-card-figma.jpg" alt="Podcast studio workspace">
+                <span class="absolute left-0 top-5 bg-[var(--color-red)] px-[10px] py-[5px] text-[18px] font-bold capitalize leading-[1.5] tracking-[-0.198px] text-white">Tech</span>
+              </figure>
+              <div class="flex min-h-[260px] flex-col justify-between gap-5 p-5">
+                <div>
+                  <h3 class="mb-5 text-[28px] font-semibold leading-[1.2] tracking-[-0.308px] text-black">Samahan Sabado September Potluck Picnic</h3>
+                  <div class="space-y-[6px] text-[12px] uppercase leading-[1.5] tracking-[-0.132px] text-black">
+                    <p class="capitalize">Michael Jay</p>
+                    <p>6 <span class="lowercase">min read</span></p>
+                  </div>
+                </div>
+                <span class="inline-flex min-h-[44px] w-max items-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] text-black">
+                  Register
+                  <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+                </span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <nav class="mt-10 flex items-center justify-center gap-[10px]" aria-label="Insights pagination">
+        <a href="#" class="flex size-10 rotate-180 items-center justify-center rounded-[8px] bg-[#fafafa]">
+          <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+        </a>
+        <a href="#" class="flex h-10 min-w-10 items-center justify-center rounded-[8px] bg-[var(--color-yellow)] px-[13px] text-[18px] font-bold leading-[1.5] tracking-[-0.198px] text-black">1</a>
+        <a href="#" class="flex h-10 min-w-10 items-center justify-center rounded-[8px] bg-[#fafafa] px-[13px] text-[18px] font-bold leading-[1.5] tracking-[-0.198px] text-black">2</a>
+        <a href="#" class="flex h-10 min-w-10 items-center justify-center rounded-[8px] bg-[#fafafa] px-[13px] text-[18px] font-bold leading-[1.5] tracking-[-0.198px] text-black">3</a>
+        <a href="#" class="flex size-10 items-center justify-center rounded-[8px] bg-[#fafafa]">
+          <img src="./images/insight-chevron-figma.svg" alt="" class="h-[13px] w-2">
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#101828] py-16 text-white">
+    <div class="wrapper flex flex-col gap-6">
+      <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-[272px_repeat(4,190px)] xl:gap-7">
+        <div class="flex flex-col gap-6 xl:h-[235px]">
+          <img src="./images/footer-figma-logo.png" alt="FTP-YYC Logo" class="h-[37px] w-[189px] object-contain">
+          <p class="font-['Inter'] text-[14px] font-normal leading-[1.4] tracking-[-0.154px] text-[#99a1af]">
+            Filipino Tech Professionals of YYC (FTP-YYC) is a non-profit organization dedicated to supporting and
+            empowering Filipino professionals and advocates within the technology industry in Calgary, Canada.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Organizations</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="about.html">About Us</a></li>
+            <li><a class="footer-figma-link" href="about.html#mission">Mission &amp; Values</a></li>
+            <li><a class="footer-figma-link" href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Registration</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="contact.html">Join Now</a></li>
+            <li><a class="footer-figma-link" href="contact.html">Membership</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Get Involved</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="contact.html">Volunteer</a></li>
+            <li><a class="footer-figma-link" href="contact.html">Sponsor</a></li>
+            <li><a class="footer-figma-link" href="contact.html">Partner</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Legal Stuff</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="#">Disclaimer</a></li>
+            <li><a class="footer-figma-link" href="#">Financing</a></li>
+            <li><a class="footer-figma-link" href="#">Privacy Policy</a></li>
+            <li><a class="footer-figma-link" href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex flex-wrap items-center gap-[14px]">
+          <p class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-[#ffc940]">Let's Connect!</p>
+          <div class="flex h-10 items-center justify-center gap-4">
+            <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]" href="#" aria-label="Facebook">
+              <img src="./images/footer-social-facebook.svg" alt="" class="size-5">
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]" href="#" aria-label="LinkedIn">
+              <img src="./images/footer-social-linkedin.svg" alt="" class="size-5">
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]" href="#" aria-label="Discord">
+              <img src="./images/footer-social-discord.svg" alt="" class="size-5">
+            </a>
+          </div>
+        </div>
+
+        <form class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
+          <label for="footer-email" class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">Stay updated</label>
+          <div class="flex h-[42px] min-w-0 gap-2">
+            <input id="footer-email"
+              class="h-[42px] min-w-0 flex-1 rounded-[10px] border border-[#364153] bg-[#1e2939] px-4 py-2 font-['Inter'] text-[16px] font-normal tracking-[-0.3125px] text-white placeholder-white/50 outline-none transition-colors duration-200 focus:border-[#ffc940] sm:w-[190px]"
+              type="email" placeholder="Enter your email" />
+            <button class="h-[42px] w-[86px] shrink-0 rounded-[10px] bg-[#ffc940] font-['Inter'] text-[16px] font-medium leading-6 tracking-[-0.3125px] text-[#101828] transition-colors duration-200 hover:bg-[#ffd663]" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="border-t border-[#1e2939] pt-[33px] text-center">
+        <p class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">
+          © 2026 FTP-YYC. All rights reserved. | Privacy Policy | Acknowledgement
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
