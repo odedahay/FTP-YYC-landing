@@ -14,12 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&family=Roboto:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
-    <title>FTP-YYC | Filipino Tech Professionals of YYC</title>
+    <title>Insight Details | FTP-YYC</title>
 </head>
 
 <body class="font-sans text-[var(--color-text)] bg-white">
@@ -35,10 +35,10 @@
                 </a>
 
                 <div class="hidden md:flex items-center justify-center gap-6 uppercase">
-                    <a class="navlink navlink-desktop cursor-pointer active" href="index.html">Home</a>
+                    <a class="navlink navlink-desktop cursor-pointer" href="index.html">Home</a>
 
                     <div class="nav-dropdown" data-dropdown>
-                        <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+                        <button class="navlink nav-dropdown-trigger cursor-pointer active" type="button" aria-expanded="false">
                             <span>Community</span>
                             <span class="nav-chevron" aria-hidden="true"></span>
                         </button>
@@ -92,12 +92,12 @@
             class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg uppercase bg-[var(--color-green-dark)]/99 z-40"
             data-menu>
             <div class="wrapper py-6 grid gap-4">
-                <a class="navlink text-base py-2 active" href="index.html">Home</a>
-                <details class="mobile-dropdown">
+                <a class="navlink text-base py-2" href="index.html">Home</a>
+                <details class="mobile-dropdown" open>
                     <summary>Community</summary>
                     <a href="about.html">About Us</a>
-                    <a href="about.html#mission">Mission &amp; Values</a>
-                    <a href="about.html#team">Our Team</a>
+                    <a href="insight.html">Insights</a>
+                    <a href="resources.html">Resources</a>
                 </details>
                 <details class="mobile-dropdown">
                     <summary>Collaborate</summary>
@@ -107,9 +107,8 @@
                 </details>
                 <details class="mobile-dropdown">
                     <summary>Contribute</summary>
-                    <a href="insight-list.html">Insights</a>
-                    <a href="insight-inner.html">Stories</a>
-                    <a href="contact.html">Submit an Idea</a>
+                    <a href="mentor.html">Mentor</a>
+                    <a href="become-a-sponsor">Become a Sponsor</a>
                 </details>
                 <a class="navlink text-base py-2" href="events.html">Events</a>
                 <a class="btn btn-primary w-full justify-center mt-4" href="contact.html">Join Us</a>
@@ -117,144 +116,121 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section id="inner-hero" class="section section-no-pb pt-8 lg:pt-12 lg:pb-0"
-        style="background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.45)), url('./images/band5.jpg')">
-        <div class="wrapper max-w-2xl mt-16 md:mx-0">
-            <h1 class="inner-hero text-white pb-32">Insights</h1>
+    <!-- Breadcrumb -->
+    <section class="pb-5 pt-4">
+        <div class="wrapper">
+            <nav class="text-[16px] leading-[1.5] tracking-[-0.176px] text-black" aria-label="Breadcrumb">
+                <a href="index.html" class="hover:underline">Home</a>
+                <span> / </span>
+                <a href="insight.html" class="font-bold hover:underline">Insights</a>
+                <span> / Samahan Sabado September Potluck Picnic</span>
+            </nav>
         </div>
     </section>
 
+    <!-- Hero -->
+    <section
+        class="relative flex min-h-[420px] items-center overflow-hidden py-10 text-white sm:min-h-[480px] lg:min-h-[480px]">
+        <img class="absolute inset-0 h-full w-full object-cover object-center" src="./images/insight-inner-hero-figma.jpg"
+            alt="Concert crowd with bright stage lights">
+        <div
+            class="absolute inset-0 bg-[linear-gradient(106.51deg,rgba(34,34,34,0.65)_49.31%,rgba(136,136,136,0.65)_75.61%)]">
+        </div>
 
-
-    <!-- Post + Sidebar -->
-    <section class="section">
-        <div class="wrapper grid lg:grid-cols-[2fr_1fr] gap-10 xl:gap-14">
-            <!-- Main Article -->
-            <article>
-                <nav class="text-xs text-[var(--color-text)]/60 mb-4 space-x-2"><a href="#"
-                        class="hover:underline">Home</a><span>/</span><a href="#"
-                        class="hover:underline">Leisure</a><span>/</span><span>Insight</span></nav>
-                <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight mb-3">Collaboration Opens Largest Sports
-                    Performance and Specialty Complex</h1>
-                <div class="text-xs text-[var(--color-text)]/60 mb-6">Written by Rodel • November 3, 2025</div>
-
-                <figure class="mb-6">
-                    <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1800&auto=format&fit=crop"
-                        alt="City street" class="w-full h-[260px] sm:h-[360px] lg:h-[420px] object-cover rounded" />
-                </figure>
-
-                <p class="text-[15px] leading-7 text-[var(--color-text)]/80 mb-5">Unique not only for Ron Scott &amp;
-                    Therapy and the Cowboys, but also for the sports performance and healthcare fields overall.</p>
-
-                <p class="text-[15px] leading-7 text-[var(--color-text)]/80 mb-5">There are many important elements to
-                    effective philanthropy, but a critical — and sometimes overlooked — one is collaboration, where
-                    like‑minded partners align their effort to engage partners.</p>
-
-                <p class="text-[11px] uppercase tracking-[0.18em] text-[var(--color-text)]/60 mt-8 mb-3">The Front
-                    Street Grade Separated Intersection Project</p>
-                <p class="text-[15px] leading-7 text-[var(--color-text)]/80 mb-6">is scheduled to begin February 2018
-                    with a planned completion of August 2024. <a href="#" class="underline">sfdot</a> will maintain
-                    updates and maps on their website below.</p>
-
-                <!-- Embedded video -->
-                <div class="mb-6">
-                    <div class="aspect-video w-full overflow-hidden rounded">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/zb6uK8zQz20"
-                            title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        <div class="wrapper relative z-10 w-full">
+            <div class="max-w-[753px]">
+                <h1
+                    class="max-w-[679px] font-['Special_Gothic_Expanded_One'] text-[42px] leading-[1.2] tracking-normal text-white sm:text-[55px]">
+                    Samahan Sabado September Potluck Picnic
+                </h1>
+                <div class="mt-[10px] flex items-center gap-[10px] text-white">
+                    <img class="size-[72px] shrink-0 rounded-full border-2 border-white object-cover"
+                        src="./images/insight-inner-author-figma.jpg" alt="John Reyes">
+                    <div class="grid gap-[2px]">
+                        <p class="text-[22px] font-semibold leading-[1.5]">John Reyes</p>
+                        <p class="text-[18px] leading-[1.5]">January 5, 2026 - 6 min read</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <p class="text-[15px] leading-7 text-[var(--color-text)]/80 mb-6">Turning, I beheld the green warriors
-                    mounting the ridge and looking for their chieftain. In a moment they saw him, and then me; but
-                    scarcely had they discovered me than I commenced firing, lying flat upon my belly in the moss…</p>
-
-                <h3 class="text-lg font-semibold mb-3">Few List Items</h3>
-                <ul class="list-disc pl-6 space-y-2 text-[15px] leading-7 text-[var(--color-text)]/80 mb-6">
-                    <li>Forcing my two revolvers upon them as a slight means of protection…</li>
-                    <li>I lifted Dejah Thoris in my arms and placed her upon the back of my thoat…</li>
-                    <li>Good‑bye, my Princess.</li>
-                </ul>
-
-                <figure class="mb-6">
-                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
-                        alt="Hikers" class="w-full h-[240px] sm:h-[320px] object-cover rounded" />
-                </figure>
-
-                <p class="text-[15px] leading-7 text-[var(--color-text)]/80 mb-6">Turning, I beheld the green warriors
-                    mounting the ridge and looking for their chieftain…</p>
-
-                <div class="flex gap-2 mt-8"><a class="px-3 py-1 rounded bg-neutral-100 text-xs" href="#">Forest</a><a
-                        class="px-3 py-1 rounded bg-neutral-100 text-xs" href="#">Season</a><a
-                        class="px-3 py-1 rounded bg-neutral-100 text-xs" href="#">Nature</a></div>
-
-                <!-- Related Posts -->
-                <div class="mt-12">
-                    <h4 class="text-lg font-semibold mb-4">Related Posts</h4>
-                    <div class="grid sm:grid-cols-3 gap-4">
-                        <a href="#" class="block">
-                            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=900&auto=format&fit=crop"
-                                class="w-full h-28 object-cover rounded mb-2" alt="Seven habits" />
-                            <p class="text-xs text-[var(--color-text)]/60">April 1, 2023 – 2 Comments</p>
-                            <p class="text-sm font-medium">Seven habits of excellent work gatherings</p>
-                        </a>
-                        <a href="#" class="block">
-                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=900&auto=format&fit=crop"
-                                class="w-full h-28 object-cover rounded mb-2" alt="Budget" />
-                            <p class="text-xs text-[var(--color-text)]/60">September 10, 2023 – 3 Comments</p>
-                            <p class="text-sm font-medium">Budget for the Organization You Want to Be</p>
-                        </a>
-                        <a href="#" class="block">
-                            <img src="https://images.unsplash.com/photo-1512138664757-360e0aad5132?q=80&w=900&auto=format&fit=crop"
-                                class="w-full h-28 object-cover rounded mb-2" alt="Rainforest" />
-                            <p class="text-xs text-[var(--color-text)]/60">August 14, 2022 – 2 Comments</p>
-                            <p class="text-sm font-medium">Moikai access in rainforest forest park reopens</p>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Sidebar -->
-            <aside class="lg:pt-2">
-                <div class="mb-8">
-                    <p class="text-[11px] tracking-[0.18em] uppercase text-[var(--color-text)]/60 mb-2">Categories</p>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#"
-                                class="flex items-center justify-between py-1 border-b border-neutral-200/70"><span>Club
-                                    News</span><span>6</span></a></li>
-                        <li><a href="#"
-                                class="flex items-center justify-between py-1 border-b border-neutral-200/70"><span>Finance</span><span>3</span></a>
-                        </li>
-                        <li><a href="#"
-                                class="flex items-center justify-between py-1 border-b border-neutral-200/70"><span>Health</span><span>5</span></a>
-                        </li>
-                        <li><a href="#"
-                                class="flex items-center justify-between py-1 border-b border-neutral-200/70"><span>Inclusion</span><span>2</span></a>
-                        </li>
-                        <li><a href="#"
-                                class="flex items-center justify-between py-1"><span>Sport</span><span>4</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="bg-neutral-50 border border-neutral-200 rounded p-5">
-                    <p class="text-[11px] tracking-[0.18em] uppercase text-[var(--color-text)]/60 mb-3">From Our Forums
+    <!-- Insight Body -->
+    <section class="border-b border-black/20 py-[60px]">
+        <div class="wrapper">
+            <div class="grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
+                <article class="max-w-[858px] text-black">
+                    <p class="mb-5 text-[18px] leading-[1.5]">
+                        At Config 2025, <a class="underline" href="https://www.figma.com/blog/introducing-figma-make/"
+                            target="_blank" rel="noreferrer">we introduced Figma Make</a>, our new prompt-to-app
+                        capability that allows designers and product teams to go from concept to functional prototype
+                        in just a few prompts. Figma's designer advocates, designers, and product managers have spent
+                        months diving deep into Figma Make, experimenting with its features and pushing its boundaries.
+                        Now, we're taking this hands-on experience and translating it into eight practical tips and best
+                        practices alongside some sample prompts for inspiration designed to help you maximize Figma
+                        Make's potential.
                     </p>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#" class="hover:underline">Let’s go with the game</a>
-                            <div class="text-[11px] text-[var(--color-text)]/60">by Janine Dela Cruz</div>
-                        </li>
-                        <li><a href="#" class="hover:underline">Announcing Forum EduTour 2022</a>
-                            <div class="text-[11px] text-[var(--color-text)]/60">by Janine Dela Cruz</div>
-                        </li>
-                        <li><a href="#" class="hover:underline">Important information on how to...</a>
-                            <div class="text-[11px] text-[var(--color-text)]/60">by Janine Dela Cruz</div>
-                        </li>
-                        <li><a href="#" class="hover:underline">A blur hanging in the distant sky</a>
-                            <div class="text-[11px] text-[var(--color-text)]/60">by Janine Dela Cruz</div>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
+
+                    <h2 class="mb-5 text-[36px] font-bold leading-[1.2] tracking-[-0.396px]">Constraints</h2>
+                    <figure class="mb-5 aspect-[858/304] w-full overflow-hidden rounded-[4px]">
+                        <img class="h-full w-full object-cover" src="./images/insight-inner-content-figma.png"
+                            alt="Person typing on a laptop">
+                    </figure>
+                    <p class="mb-5 text-[18px] leading-[1.5]">
+                        This front-loading strategy requires not only having a clear vision of your product flow and
+                        specs before prompting Figma Make, but also sharing that context with the right prompts. You can
+                        also leverage AI assistants to refine your prompts-they'll provide detailed guidance and ready to
+                        use code snippets to be pasted directly into your Make for advanced effects. This front-loading
+                        strategy requires not only having a clear vision of your product flow and specs before prompting
+                        Figma Make, but also sharing that context with the right prompts. You can also leverage AI
+                        assistants to refine your prompts-they'll provide detailed guidance and ready to use code
+                        snippets to be pasted directly into your Make for advanced effects.
+                    </p>
+
+                    <h2 class="mb-5 text-[36px] font-bold leading-[1.2] tracking-[-0.396px]">Who Should Attend</h2>
+                    <p class="text-[18px] leading-[1.5]">
+                        Figma Designer Advocate Manager Greg Huntoon iterated with different approaches until landing on
+                        a prompt that yielded a working v1 for his mouse effect visualization kit. His most successful
+                        prompt contained:
+                    </p>
+                </article>
+
+                <aside class="grid gap-[10px] lg:sticky lg:top-28">
+                    <div class="rounded-[8px] border border-black/20 bg-white p-5">
+                        <div class="mb-5 flex items-center gap-[10px]">
+                            <img class="size-[72px] shrink-0 rounded-full border-2 border-white object-cover"
+                                src="./images/insight-inner-author-figma.jpg" alt="John Reyes">
+                            <div>
+                                <p class="text-[22px] font-semibold leading-[1.5] text-black">John Reyes</p>
+                                <p class="text-[16px] leading-[1.2] text-black">Calgary Designer &amp; Community Organizer</p>
+                            </div>
+                        </div>
+                        <p class="mb-5 text-[16px] leading-[1.2] text-black">Helping tech professionals grows in Calgary</p>
+                        <div class="grid gap-[10px] sm:grid-cols-2 lg:grid-cols-2">
+                            <a href="#"
+                                class="inline-flex min-h-[44px] items-center justify-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] tracking-[-0.176px] text-black transition-colors duration-200 hover:bg-[#ffd663]">
+                                Follow
+                                <img src="./images/chevron-right-figma.svg" alt="" class="h-[13px] w-2">
+                            </a>
+                            <a href="#"
+                                class="inline-flex min-h-[44px] items-center justify-center gap-[10px] rounded-[6px] border border-black/80 bg-white px-5 py-[10px] text-[16px] font-medium leading-[1.5] tracking-[-0.176px] text-black transition-colors duration-200 hover:bg-black/5">
+                                View Profile
+                                <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="rounded-[8px] border border-black/20 bg-white p-5 text-black">
+                        <h2 class="mb-5 text-[20px] font-semibold leading-[1.2]">Table of Contents</h2>
+                        <ul class="list-disc space-y-1 pl-6 text-[18px] leading-[1.6]">
+                            <li><a href="#" class="hover:underline">Project overview</a></li>
+                            <li><a href="#" class="hover:underline">Platform specification</a></li>
+                            <li><a href="#" class="hover:underline">Purpose and use case</a></li>
+                            <li><a href="#" class="hover:underline">Core features lis</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
         </div>
     </section>
 
@@ -368,10 +344,6 @@
         </div>
     </footer>
 </body>
-<script>
-    // This script is just to ensure Tailwind CSS is loaded correctly
-    console.log('Tailwind CSS is ready to use!');
-</script>
 <script src="./js/script.js"></script>
 
 </html>
