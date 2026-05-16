@@ -1,0 +1,577 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:title" content="FTP-YYC">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="https://ftp-yyc.ca/_assets/images/4b380ebad8d752fff4ec3abcce876896.png">
+  <link rel="icon" href="https://ftp-yyc.ca/_assets/images/7285e421d89fd2e8d95379cbeaef5141.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://ftp-yyc.ca/_assets/images/03a2d4db9323317d1b291bf04b390c5b.png"
+    sizes="180x180">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&family=Roboto:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <title>Mentor Program | FTP-YYC</title>
+</head>
+
+<body class="font-sans text-[var(--color-text)] bg-white">
+  <!-- Header -->
+  <header class="header-bg" data-header>
+    <div class="wrapper pt-12 pb-5">
+      <nav class="flex items-center justify-between font-bold">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="./images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
+        </a>
+
+        <div class="hidden md:flex items-center justify-center gap-6 uppercase">
+          <a class="navlink navlink-desktop cursor-pointer" href="index.html">Home</a>
+
+          <div class="nav-dropdown" data-dropdown>
+            <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+              <span>Community</span>
+              <span class="nav-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="about.html" role="menuitem">About Us</a>
+              <a href="resources.html" role="menuitem">Resources</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown" data-dropdown>
+            <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+              <span>Collaborate</span>
+              <span class="nav-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="volunteer.html" role="menuitem">Volunteer</a>
+              <a href="partnership.html" role="menuitem">Partnership</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown" data-dropdown>
+            <button class="navlink nav-dropdown-trigger cursor-pointer active" type="button" aria-expanded="false">
+              <span>Contribute</span>
+              <span class="nav-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="mentor.html" role="menuitem">Mentor</a>
+              <a href="become-a-sponsor.html" role="menuitem">Become a Sponsor</a>
+            </div>
+          </div>
+          <a class="navlink navlink-desktop cursor-pointer" href="insight.html">Insight</a>
+          <a class="navlink navlink-desktop cursor-pointer" href="events.html">Events</a>
+          <a class="btn btn-primary nav-join cursor-pointer" href="contact.html">Join Us</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="menu-btn" type="button" class="z-[99] block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="menu"
+      class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg uppercase bg-[var(--color-green-dark)]/99 z-40"
+      data-menu>
+      <div class="wrapper py-6 grid gap-4">
+        <a class="navlink text-base py-2" href="index.html">Home</a>
+        <details class="mobile-dropdown">
+          <summary>Community</summary>
+          <a href="about.html">About Us</a>
+          <a href="insight.html">Insights</a>
+          <a href="resources.html">Resources</a>
+        </details>
+        <details class="mobile-dropdown">
+          <summary>Collaborate</summary>
+          <a href="events.html">Events</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="partnership.html">Partnership</a>
+        </details>
+        <details class="mobile-dropdown" open>
+          <summary>Contribute</summary>
+          <a class="font-bold text-[var(--color-text)]" href="mentor.html">Mentor</a>
+          <a href="become-a-sponsor.html">Become a Sponsor</a>
+        </details>
+        <a class="navlink text-base py-2" href="events.html">Events</a>
+        <a class="btn btn-primary w-full justify-center mt-4" href="contact.html">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="bg-white">
+    
+
+    <!-- Hero -->
+    <section class="relative flex min-h-[360px] items-center overflow-hidden py-16 text-white lg:min-h-[430px]">
+      <img class="absolute inset-0 h-full w-full object-cover object-center"
+        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=80"
+        alt="Mentor and mentee reviewing work on a laptop">
+      <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,26,43,0.92)_0%,rgba(4,26,43,0.72)_42%,rgba(4,26,43,0.12)_78%)]"></div>
+
+      <div class="wrapper relative z-10 w-full">
+        <div class="max-w-[690px]">
+          <h1 class="text-[40px] font-bold leading-[1.08] tracking-normal text-white sm:text-[54px] lg:text-[60px]">
+            Learn. Grow. Lead.<br>With a Mentor by Your Side.
+          </h1>
+          <p class="mt-5 max-w-[540px] text-[18px] font-medium leading-[1.65] text-white">
+            Our mentors are experienced professionals who are passionate about helping you navigate your tech career and achieve your goals.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-5">
+            <a href="#mentors"
+              class="inline-flex min-h-[54px] items-center justify-center rounded-[6px] bg-[var(--color-yellow)] px-8 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-[#ffd663]">
+              Find a Mentor
+            </a>
+            <a href="contact.html"
+              class="inline-flex min-h-[54px] items-center justify-center gap-4 rounded-[6px] bg-white px-7 text-[16px] font-bold text-black shadow-sm transition-colors duration-200 hover:bg-white/90">
+              Become a Mentor
+              <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="border-b border-black/10 bg-white" aria-label="Breadcrumb">
+      <div class="wrapper flex min-h-[58px] items-center gap-3 text-[14px] font-medium text-black/50">
+        <a href="index.html" class="transition-colors duration-200 hover:text-[var(--color-deep-blue)]">Home</a>
+        <span class="text-black/35" aria-hidden="true">&rsaquo;</span>
+        <span>Collaborate</span>
+        <span class="text-black/35" aria-hidden="true">&rsaquo;</span>
+        <span aria-current="page">Mentor Program</span>
+      </div>
+    </nav>
+
+    <!-- Benefits -->
+    <section class="py-9">
+      <div class="wrapper">
+        <div class="grid gap-6 rounded-[10px] border border-black/10 bg-white px-6 py-7 shadow-sm sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:px-7">
+          <article class="flex items-start gap-4 lg:border-r lg:border-black/15 lg:pr-7">
+            <span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-[#dceaff] text-[#1261aa]">
+              <svg class="size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-8 0v2" /><circle cx="12" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M2 21v-2a4 4 0 0 1 3-3.87M8 3.13a4 4 0 0 0 0 7.75" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-[16px] font-bold leading-tight text-black">Personalized Guidance</h2>
+              <p class="mt-2 text-[14px] leading-[1.55] text-black">Get one-on-one support tailored to your goals.</p>
+            </div>
+          </article>
+
+          <article class="flex items-start gap-4 lg:border-r lg:border-black/15 lg:px-7">
+            <span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-[#fff1c7] text-[#d99a00]">
+              <svg class="size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19V9M10 19V5M16 19v-8M22 19H2" /><path d="m16 11 3-3 3 3" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-[16px] font-bold leading-tight text-black">Career Growth</h2>
+              <p class="mt-2 text-[14px] leading-[1.55] text-black">Develop new skills and advance your career.</p>
+            </div>
+          </article>
+
+          <article class="flex items-start gap-4 lg:border-r lg:border-black/15 lg:px-7">
+            <span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-[#dff6ec] text-[#19a974]">
+              <svg class="size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="4" /><path d="M4 20a8 8 0 0 1 16 0" />
+                <path d="M20 8h2M21 7v2M2 8h2M3 7v2" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-[16px] font-bold leading-tight text-black">Expand Your Network</h2>
+              <p class="mt-2 text-[14px] leading-[1.55] text-black">Connect with professionals across the tech community.</p>
+            </div>
+          </article>
+
+          <article class="flex items-start gap-4 lg:pl-7">
+            <span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-[#eee8ff] text-[#6b45d7]">
+              <svg class="size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m12 3 2.7 5.47 6.03.88-4.37 4.26 1.03 6.01L12 16.79l-5.39 2.83 1.03-6.01-4.37-4.26 6.03-.88L12 3Z" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-[16px] font-bold leading-tight text-black">Give Back</h2>
+              <p class="mt-2 text-[14px] leading-[1.55] text-black">Share your knowledge and inspire the next generation.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentors -->
+    <section id="mentors" class="pb-10">
+      <div class="wrapper">
+        <div class="mb-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <h2 class="text-[30px] font-bold leading-tight text-black">Meet Our Mentors</h2>
+            <p class="mt-3 text-[16px] leading-[1.5] text-black">Experienced professionals ready to help you succeed.</p>
+          </div>
+
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <form class="relative w-full sm:w-[390px]" role="search">
+              <label for="mentor-search" class="sr-only">Search mentors</label>
+              <input id="mentor-search" type="search" placeholder="Search mentors by name, skills..."
+                class="h-[58px] w-full rounded-[8px] border border-black/15 bg-white py-3 pl-5 pr-14 text-[15px] text-black outline-none placeholder:text-black/50 focus:border-[#2b73b4] focus:ring-2 focus:ring-[#2b73b4]/20">
+              <svg class="pointer-events-none absolute right-5 top-1/2 size-6 -translate-y-1/2 text-black"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="m21 21-4.35-4.35" />
+                <circle cx="11" cy="11" r="7" />
+              </svg>
+            </form>
+            <button type="button"
+              class="inline-flex h-[58px] items-center justify-center gap-3 rounded-[8px] border border-black/15 bg-white px-8 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-black/5">
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 6h16M7 12h10M10 18h4" />
+              </svg>
+              Filter
+            </button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <article class="rounded-[8px] border border-black/15 bg-white p-5 shadow-sm">
+              <span class="rounded-[6px] bg-[#dceaff] px-3 py-1 text-[12px] font-bold text-[#1261aa]">Web Development</span>
+              <img class="mx-auto mt-1 size-24 rounded-full object-cover" src="./images/kent.jpg" alt="Michael Santos">
+              <h3 class="mt-5 text-[20px] font-bold leading-tight text-black">Michael Santos</h3>
+              <p class="mt-2 text-[14px] font-bold text-black">Senior Software Engineer</p>
+              <p class="mt-1 text-[14px] text-black/70">Amazon</p>
+              <p class="mt-5 min-h-[82px] text-[15px] leading-[1.5] text-black">Passionate about building scalable web applications and mentoring junior developers.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">React</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Node.js</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">AWS</span>
+              </div>
+              <a href="contact.html" class="mt-8 inline-flex items-center gap-3 text-[15px] font-bold text-black">
+                View Profile <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+              </a>
+            </article>
+
+            <article class="rounded-[8px] border border-black/15 bg-white p-5 shadow-sm">
+              <span class="rounded-[6px] bg-[#dff6ec] px-3 py-1 text-[12px] font-bold text-[#16833a]">Data &amp; AI</span>
+              <img class="mx-auto mt-1 size-24 rounded-full object-cover" src="./images/janine.jpg" alt="Jasmine Reyes">
+              <h3 class="mt-5 text-[20px] font-bold leading-tight text-black">Jasmine Reyes</h3>
+              <p class="mt-2 text-[14px] font-bold text-black">Data Scientist</p>
+              <p class="mt-1 text-[14px] text-black/70">RBC</p>
+              <p class="mt-5 min-h-[82px] text-[15px] leading-[1.5] text-black">Helping businesses make data-driven decisions through analytics and machine learning.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Python</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">SQL</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Machine Learning</span>
+              </div>
+              <a href="contact.html" class="mt-8 inline-flex items-center gap-3 text-[15px] font-bold text-black">
+                View Profile <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+              </a>
+            </article>
+
+            <article class="rounded-[8px] border border-black/15 bg-white p-5 shadow-sm">
+              <span class="rounded-[6px] bg-[#fff1c7] px-3 py-1 text-[12px] font-bold text-[#d28a00]">Product Management</span>
+              <img class="mx-auto mt-1 size-24 rounded-full object-cover grayscale" src="./images/weng.jpg" alt="Daniel Dela Cruz">
+              <h3 class="mt-5 text-[20px] font-bold leading-tight text-black">Daniel Dela Cruz</h3>
+              <p class="mt-2 text-[14px] font-bold text-black">Product Manager</p>
+              <p class="mt-1 text-[14px] text-black/70">Google</p>
+              <p class="mt-5 min-h-[82px] text-[15px] leading-[1.5] text-black">Experienced in building products users love and leading cross-functional teams.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Product Strategy</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Agile</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">UX</span>
+              </div>
+              <a href="contact.html" class="mt-8 inline-flex items-center gap-3 text-[15px] font-bold text-black">
+                View Profile <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+              </a>
+            </article>
+
+            <article class="rounded-[8px] border border-black/15 bg-white p-5 shadow-sm">
+              <span class="rounded-[6px] bg-[#eee8ff] px-3 py-1 text-[12px] font-bold text-[#6b45d7]">Cybersecurity</span>
+              <img class="mx-auto mt-1 size-24 rounded-full object-cover" src="./images/dina.jpg" alt="Angela Tolentino">
+              <h3 class="mt-5 text-[20px] font-bold leading-tight text-black">Angela Tolentino</h3>
+              <p class="mt-2 text-[14px] font-bold text-black">Security Analyst</p>
+              <p class="mt-1 text-[14px] text-black/70">IBM</p>
+              <p class="mt-5 min-h-[82px] text-[15px] leading-[1.5] text-black">Focused on protecting systems and data while empowering secure innovation.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Security</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Risk Mgmt</span>
+                <span class="rounded-[5px] bg-[#f2f4f7] px-3 py-1 text-[12px] text-black">Python</span>
+              </div>
+              <a href="contact.html" class="mt-8 inline-flex items-center gap-3 text-[15px] font-bold text-black">
+                View Profile <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+              </a>
+            </article>
+          </div>
+          <button type="button"
+            class="absolute -right-5 top-1/2 hidden size-12 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#1261aa] shadow-lg ring-1 ring-black/10 xl:flex"
+            aria-label="Next mentors">
+            <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+          </button>
+        </div>
+
+        <div class="mt-7 text-center">
+          <a href="contact.html"
+            class="inline-flex min-h-[48px] items-center justify-center gap-4 rounded-[6px] border border-black/15 bg-white px-7 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-black/5">
+            View All Mentors
+            <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Cards -->
+    <section class="pb-10">
+      <div class="wrapper grid gap-6 lg:grid-cols-2">
+        <article class="relative overflow-hidden rounded-[10px] bg-[#eef5ff] p-8">
+          <div class="relative z-10 max-w-[410px]">
+            <h2 class="text-[24px] font-bold leading-tight text-black">Looking for a Mentor?</h2>
+            <p class="mt-5 text-[16px] leading-[1.55] text-black">Find the right mentor who can help you achieve your career goals and unlock your potential.</p>
+            <a href="#mentors" class="mt-7 inline-flex min-h-[52px] items-center rounded-[6px] bg-[#0f63b6] px-7 text-[16px] font-bold text-white transition-colors duration-200 hover:bg-[#0b5297]">
+              Find a Mentor
+            </a>
+          </div>
+          <svg class="absolute bottom-0 right-6 hidden h-[150px] w-[230px] text-[#2a518b] sm:block" viewBox="0 0 260 160" fill="none" aria-hidden="true">
+            <path d="M40 150V98c0-17 14-31 31-31h4c17 0 31 14 31 31v52" fill="#b9cff2" />
+            <circle cx="73" cy="44" r="24" fill="#2a518b" />
+            <path d="M158 150V92c0-16 13-29 29-29h6c16 0 29 13 29 29v58" fill="#d8e7ff" />
+            <circle cx="190" cy="39" r="23" fill="#102a56" />
+            <rect x="99" y="110" width="66" height="38" rx="4" fill="white" stroke="currentColor" stroke-width="2" />
+            <rect x="144" y="18" width="58" height="34" rx="5" fill="white" stroke="currentColor" stroke-width="2" />
+            <path d="M155 31h31M155 39h20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </article>
+
+        <article class="relative overflow-hidden rounded-[10px] bg-[#fff3d9] p-8">
+          <div class="relative z-10 max-w-[430px]">
+            <h2 class="text-[24px] font-bold leading-tight text-black">Want to Make an Impact?</h2>
+            <p class="mt-5 text-[16px] leading-[1.55] text-black">Share your experience, inspire others, and help shape the future of our tech community.</p>
+            <a href="contact.html" class="mt-7 inline-flex min-h-[52px] items-center rounded-[6px] bg-[var(--color-yellow)] px-7 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-[#ffd663]">
+              Become a Mentor
+            </a>
+          </div>
+          <svg class="absolute bottom-0 right-6 hidden h-[150px] w-[240px] text-[#2a518b] sm:block" viewBox="0 0 270 160" fill="none" aria-hidden="true">
+            <circle cx="209" cy="30" r="19" fill="#f8fbff" stroke="currentColor" stroke-width="2" />
+            <circle cx="236" cy="86" r="18" fill="#f8fbff" stroke="currentColor" stroke-width="2" />
+            <circle cx="159" cy="64" r="17" fill="#f8fbff" stroke="currentColor" stroke-width="2" />
+            <path d="M175 70 196 39M177 72l42 10" stroke="#9bb6da" stroke-width="2" stroke-dasharray="4 4" />
+            <path d="M72 150V96c0-18 15-33 33-33h6c18 0 33 15 33 33v54" fill="#d8e7ff" />
+            <circle cx="108" cy="39" r="25" fill="#102a56" />
+            <rect x="30" y="111" width="78" height="38" rx="4" fill="white" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </article>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="pb-8">
+      <div class="wrapper">
+        <h2 class="text-center text-[24px] font-bold leading-tight text-black">How Our Mentorship Program Works</h2>
+        <div class="mt-9 grid gap-8 text-center sm:grid-cols-2 lg:grid-cols-4">
+          <article class="relative">
+            <span class="mx-auto flex size-7 items-center justify-center rounded-full bg-[#dceaff] text-[15px] font-bold text-[#1261aa] ring-2 ring-[#99c0ff]">1</span>
+            <div class="mx-auto mt-3 flex size-20 items-center justify-center rounded-[18px] border border-black/15 bg-white">
+              <svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" /><path d="M14 2v6h6M8 13h5M8 17h3" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-[16px] font-bold text-black">Sign Up</h3>
+            <p class="mx-auto mt-2 max-w-[180px] text-[13px] leading-[1.45] text-black">Create your profile as a mentee or mentor.</p>
+          </article>
+
+          <article class="relative">
+            <span class="mx-auto flex size-7 items-center justify-center rounded-full bg-[#dceaff] text-[15px] font-bold text-[#1261aa] ring-2 ring-[#99c0ff]">2</span>
+            <div class="mx-auto mt-3 flex size-20 items-center justify-center rounded-[18px] border border-black/15 bg-white">
+              <svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" /><path d="m21 21-4.35-4.35M11 8v6M8 11h6" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-[16px] font-bold text-black">Find a Match</h3>
+            <p class="mx-auto mt-2 max-w-[180px] text-[13px] leading-[1.45] text-black">We'll help you find the right mentor or mentee.</p>
+          </article>
+
+          <article class="relative">
+            <span class="mx-auto flex size-7 items-center justify-center rounded-full bg-[#dceaff] text-[15px] font-bold text-[#1261aa] ring-2 ring-[#99c0ff]">3</span>
+            <div class="mx-auto mt-3 flex size-20 items-center justify-center rounded-[18px] border border-black/15 bg-white">
+              <svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" /><path d="M8 10h.01M12 10h.01M16 10h.01" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-[16px] font-bold text-black">Connect &amp; Learn</h3>
+            <p class="mx-auto mt-2 max-w-[180px] text-[13px] leading-[1.45] text-black">Start your mentorship journey and achieve your goals.</p>
+          </article>
+
+          <article class="relative">
+            <span class="mx-auto flex size-7 items-center justify-center rounded-full bg-[#dceaff] text-[15px] font-bold text-[#1261aa] ring-2 ring-[#99c0ff]">4</span>
+            <div class="mx-auto mt-3 flex size-20 items-center justify-center rounded-[18px] border border-black/15 bg-white">
+              <svg class="size-10 text-[var(--color-yellow)]" viewBox="0 0 24 24" fill="currentColor" stroke="black" stroke-width="1.2" aria-hidden="true">
+                <path d="m12 3 2.7 5.47 6.03.88-4.37 4.26 1.03 6.01L12 16.79l-5.39 2.83 1.03-6.01-4.37-4.26 6.03-.88L12 3Z" />
+              </svg>
+            </div>
+            <h3 class="mt-4 text-[16px] font-bold text-black">Grow Together</h3>
+            <p class="mx-auto mt-2 max-w-[180px] text-[13px] leading-[1.45] text-black">Build lasting relationships and celebrate success.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="pb-12">
+      <div class="wrapper">
+        <h2 class="text-center text-[24px] font-bold leading-tight text-black">What Our Members Say</h2>
+        <div class="relative mt-6">
+          <div class="grid gap-6 lg:grid-cols-3">
+            <article class="rounded-[8px] border border-black/15 bg-white p-7 shadow-sm">
+              <p class="text-[34px] font-bold leading-none text-[#1261aa]">&ldquo;</p>
+              <p class="mt-1 text-[16px] leading-[1.55] text-black">My mentor helped me gain clarity in my career path and land my dream job. This program is incredibly valuable!</p>
+              <div class="mt-6 flex items-center gap-3">
+                <img src="./images/kent.jpg" alt="Carlo Mendoza" class="size-10 rounded-full object-cover">
+                <div>
+                  <p class="text-[14px] font-bold text-black">- Carlo Mendoza</p>
+                  <p class="text-[13px] text-black/70">Software Developer</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="rounded-[8px] border border-black/15 bg-white p-7 shadow-sm">
+              <p class="text-[34px] font-bold leading-none text-[#19a974]">&ldquo;</p>
+              <p class="mt-1 text-[16px] leading-[1.55] text-black">Volunteering as a mentor has been a rewarding experience. I love giving back to the community and seeing others grow.</p>
+              <div class="mt-6 flex items-center gap-3">
+                <img src="./images/janine.jpg" alt="Mia Villanueva" class="size-10 rounded-full object-cover">
+                <div>
+                  <p class="text-[14px] font-bold text-black">- Mia Villanueva</p>
+                  <p class="text-[13px] text-black/70">Senior UX Designer</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="rounded-[8px] border border-black/15 bg-white p-7 shadow-sm">
+              <p class="text-[34px] font-bold leading-none text-[#19a974]">&ldquo;</p>
+              <p class="mt-1 text-[16px] leading-[1.55] text-black">The mentorship sessions are insightful, practical, and truly impactful. Highly recommended!</p>
+              <div class="mt-6 flex items-center gap-3">
+                <img src="./images/weng.jpg" alt="Kevin Fernandez" class="size-10 rounded-full object-cover">
+                <div>
+                  <p class="text-[14px] font-bold text-black">- Kevin Fernandez</p>
+                  <p class="text-[13px] text-black/70">Data Analyst</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button type="button" class="absolute -left-5 top-1/2 hidden size-12 -translate-y-1/2 rotate-180 items-center justify-center rounded-full bg-white shadow-lg ring-1 ring-black/10 lg:flex" aria-label="Previous testimonials">
+            <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+          </button>
+          <button type="button" class="absolute -right-5 top-1/2 hidden size-12 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg ring-1 ring-black/10 lg:flex" aria-label="Next testimonials">
+            <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+          </button>
+        </div>
+        <div class="mt-5 flex justify-center gap-3" aria-hidden="true">
+          <span class="size-3 rounded-full bg-[#1261aa]"></span>
+          <span class="size-3 rounded-full bg-black/15"></span>
+          <span class="size-3 rounded-full bg-black/15"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#101828] py-16 text-white">
+    <div class="wrapper flex flex-col gap-6">
+      <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-[272px_repeat(4,190px)] xl:gap-7">
+        <div class="flex flex-col gap-6 xl:h-[235px]">
+          <img src="./images/footer-figma-logo.png" alt="FTP-YYC Logo" class="h-[37px] w-[189px] object-contain">
+          <p class="font-['Inter'] text-[14px] font-normal leading-[1.4] tracking-[-0.154px] text-[#99a1af]">
+            Filipino Tech Professionals of YYC (FTP-YYC) is a non-profit organization dedicated to supporting and
+            empowering Filipino professionals and advocates within the technology industry in Calgary, Canada.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Organizations</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="about.html">About Us</a></li>
+            <li><a class="footer-figma-link" href="about.html#mission">Mission &amp; Values</a></li>
+            <li><a class="footer-figma-link" href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Registration</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="contact.html">Join Now</a></li>
+            <li><a class="footer-figma-link" href="contact.html">Membership</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Get Involved</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="contact.html">Volunteer</a></li>
+            <li><a class="footer-figma-link" href="contact.html">Sponsor</a></li>
+            <li><a class="footer-figma-link" href="contact.html">Partner</a></li>
+            <li><a class="footer-figma-link" href="mentor.html">Mentor</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">Legal Stuff</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="footer-figma-link" href="#">Disclaimer</a></li>
+            <li><a class="footer-figma-link" href="#">Financing</a></li>
+            <li><a class="footer-figma-link" href="#">Privacy Policy</a></li>
+            <li><a class="footer-figma-link" href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex flex-wrap items-center gap-[14px]">
+          <p class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-[#ffc940]">Let's Connect!</p>
+          <div class="flex h-10 items-center justify-center gap-4">
+            <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]" href="#" aria-label="Facebook">
+              <img src="./images/footer-social-facebook.svg" alt="" class="size-5">
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]" href="#" aria-label="LinkedIn">
+              <img src="./images/footer-social-linkedin.svg" alt="" class="size-5">
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]" href="#" aria-label="Discord">
+              <img src="./images/footer-social-discord.svg" alt="" class="size-5">
+            </a>
+          </div>
+        </div>
+
+        <form class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
+          <label for="footer-email" class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">Stay updated</label>
+          <div class="flex h-[42px] min-w-0 gap-2">
+            <input id="footer-email"
+              class="h-[42px] min-w-0 flex-1 rounded-[10px] border border-[#364153] bg-[#1e2939] px-4 py-2 font-['Inter'] text-[16px] font-normal tracking-[-0.3125px] text-white placeholder-white/50 outline-none transition-colors duration-200 focus:border-[#ffc940] sm:w-[190px]"
+              type="email" placeholder="Enter your email" />
+            <button class="h-[42px] w-[86px] shrink-0 rounded-[10px] bg-[#ffc940] font-['Inter'] text-[16px] font-medium leading-6 tracking-[-0.3125px] text-[#101828] transition-colors duration-200 hover:bg-[#ffd663]" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="border-t border-[#1e2939] pt-[33px] text-center">
+        <p class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">
+          © 2026 FTP-YYC. All rights reserved. | Privacy Policy | Acknowledgement
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

@@ -35,16 +35,15 @@
                 </a>
 
                 <div class="hidden md:flex items-center justify-center gap-6 uppercase">
-                    <a class="navlink navlink-desktop cursor-pointer" href="index.html">Home</a>
+                    <a class="navlink navlink-desktop cursor-pointer active" href="index.html">Home</a>
 
                     <div class="nav-dropdown" data-dropdown>
-                        <button class="navlink nav-dropdown-trigger cursor-pointer active" type="button" aria-expanded="false">
+                        <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
                             <span>Community</span>
                             <span class="nav-chevron" aria-hidden="true"></span>
                         </button>
                         <div class="nav-dropdown-menu" role="menu">
                             <a href="about.html" role="menuitem">About Us</a>
-                            <a href="insight.html" role="menuitem">Insights</a>
                             <a href="resources.html" role="menuitem">Resources</a>
                         </div>
                     </div>
@@ -55,8 +54,8 @@
                             <span class="nav-chevron" aria-hidden="true"></span>
                         </button>
                         <div class="nav-dropdown-menu" role="menu">
-                            <a href="contact.html" role="menuitem">Volunteer</a>
-                            <a href="contact.html" role="menuitem">Partnership</a>
+                            <a href="volunter.html" role="menuitem">Volunteer</a>
+                            <a href="partnership.html" role="menuitem">Partnership</a>
                         </div>
                     </div>
 
@@ -66,11 +65,11 @@
                             <span class="nav-chevron" aria-hidden="true"></span>
                         </button>
                         <div class="nav-dropdown-menu" role="menu">
-                            <a href="insight-list.html" role="menuitem">Mentor</a>
-                            <a href="insight-inner.html" role="menuitem">Become a Sponsor</a>
+                            <a href="mentor.html" role="menuitem">Mentor</a>
+                            <a href="become-a-sponsor.html" role="menuitem">Become a Sponsor</a>
                         </div>
                     </div>
-                    <a class="navlink navlink-desktop cursor-pointer" href="insight.html">Insight</a>
+                    <a class="navlink navlink-desktop cursor-pointer active" href="insight.html">Insight</a>
                     <a class="navlink navlink-desktop cursor-pointer" href="events.html">Events</a>
                     <a class="btn btn-primary nav-join cursor-pointer" href="contact.html">Join Us</a>
                 </div>
@@ -83,6 +82,7 @@
                     </button>
                 </div>
             </nav>
+
 
 
         </div>
@@ -116,23 +116,11 @@
         </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <section class="pb-5 pt-4">
-        <div class="wrapper">
-            <nav class="text-[16px] leading-[1.5] tracking-[-0.176px] text-black" aria-label="Breadcrumb">
-                <a href="index.html" class="hover:underline">Home</a>
-                <span> / </span>
-                <a href="insight.html" class="font-bold hover:underline">Insights</a>
-                <span> / Samahan Sabado September Potluck Picnic</span>
-            </nav>
-        </div>
-    </section>
-
     <!-- Hero -->
     <section
         class="relative flex min-h-[420px] items-center overflow-hidden py-10 text-white sm:min-h-[480px] lg:min-h-[480px]">
-        <img class="absolute inset-0 h-full w-full object-cover object-center" src="./images/insight-inner-hero-figma.jpg"
-            alt="Concert crowd with bright stage lights">
+        <img class="absolute inset-0 h-full w-full object-cover object-center"
+            src="./images/insight-inner-hero-figma.jpg" alt="Concert crowd with bright stage lights">
         <div
             class="absolute inset-0 bg-[linear-gradient(106.51deg,rgba(34,34,34,0.65)_49.31%,rgba(136,136,136,0.65)_75.61%)]">
         </div>
@@ -152,6 +140,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="border-b border-black/10 pb-5 pt-4">
+        <div class="wrapper">
+            <nav class="text-[16px] leading-[1.5] tracking-[-0.176px] text-black/50" aria-label="Breadcrumb">
+                <a href="index.html" class="hover:underline">Home</a>
+                <span> / </span>
+                <a href="insight.html" class="font-normal hover:underline">Insights</a>
+                <span> / Samahan Sabado September Potluck Picnic</span>
+            </nav>
         </div>
     </section>
 
@@ -179,7 +179,8 @@
                     <p class="mb-5 text-[18px] leading-[1.5]">
                         This front-loading strategy requires not only having a clear vision of your product flow and
                         specs before prompting Figma Make, but also sharing that context with the right prompts. You can
-                        also leverage AI assistants to refine your prompts-they'll provide detailed guidance and ready to
+                        also leverage AI assistants to refine your prompts-they'll provide detailed guidance and ready
+                        to
                         use code snippets to be pasted directly into your Make for advanced effects. This front-loading
                         strategy requires not only having a clear vision of your product flow and specs before prompting
                         Figma Make, but also sharing that context with the right prompts. You can also leverage AI
@@ -202,10 +203,12 @@
                                 src="./images/insight-inner-author-figma.jpg" alt="John Reyes">
                             <div>
                                 <p class="text-[22px] font-semibold leading-[1.5] text-black">John Reyes</p>
-                                <p class="text-[16px] leading-[1.2] text-black">Calgary Designer &amp; Community Organizer</p>
+                                <p class="text-[16px] leading-[1.2] text-black">Calgary Designer &amp; Community
+                                    Organizer</p>
                             </div>
                         </div>
-                        <p class="mb-5 text-[16px] leading-[1.2] text-black">Helping tech professionals grows in Calgary</p>
+                        <p class="mb-5 text-[16px] leading-[1.2] text-black">Helping tech professionals grows in Calgary
+                        </p>
                         <div class="grid gap-[10px] sm:grid-cols-2 lg:grid-cols-2">
                             <a href="#"
                                 class="inline-flex min-h-[44px] items-center justify-center gap-[10px] rounded-[6px] bg-[var(--color-yellow)] px-5 py-[10px] text-[16px] font-medium leading-[1.5] tracking-[-0.176px] text-black transition-colors duration-200 hover:bg-[#ffd663]">

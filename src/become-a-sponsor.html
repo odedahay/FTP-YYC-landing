@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:title" content="FTP-YYC">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="https://ftp-yyc.ca/_assets/images/4b380ebad8d752fff4ec3abcce876896.png">
+    <link rel="icon" href="https://ftp-yyc.ca/_assets/images/7285e421d89fd2e8d95379cbeaef5141.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://ftp-yyc.ca/_assets/images/03a2d4db9323317d1b291bf04b390c5b.png"
+        sizes="180x180">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:wght@600;700&family=Roboto:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Become a Sponsor | FTP-YYC</title>
+</head>
+
+<body class="font-sans text-[var(--color-text)] bg-white">
+    <!-- Header -->
+    <header class="header-bg" data-header>
+        <div class="wrapper pt-12 pb-5">
+            <nav class="flex items-center justify-between font-bold">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="./images/ftp-yyc-logo.svg" alt="FTP-YYC Logo" class="w-[320px] h-auto">
+                </a>
+
+                <div class="hidden md:flex items-center justify-center gap-6 uppercase">
+                    <a class="navlink navlink-desktop cursor-pointer" href="index.html">Home</a>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="navlink nav-dropdown-trigger cursor-pointer" type="button"
+                            aria-expanded="false">
+                            <span>Community</span>
+                            <span class="nav-chevron" aria-hidden="true"></span>
+                        </button>
+                        <div class="nav-dropdown-menu" role="menu">
+                            <a href="about.html" role="menuitem">About Us</a>
+                            <a href="resources.html" role="menuitem">Resources</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="navlink nav-dropdown-trigger cursor-pointer" type="button" aria-expanded="false">
+                            <span>Collaborate</span>
+                            <span class="nav-chevron" aria-hidden="true"></span>
+                        </button>
+                        <div class="nav-dropdown-menu" role="menu">
+                            <a href="volunteer.html" role="menuitem">Volunteer</a>
+                            <a href="partnership.html" role="menuitem">Partnership</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="navlink nav-dropdown-trigger cursor-pointer active" type="button" aria-expanded="false">
+                            <span>Contribute</span>
+                            <span class="nav-chevron" aria-hidden="true"></span>
+                        </button>
+                        <div class="nav-dropdown-menu" role="menu">
+                            <a href="mentor.html" role="menuitem">Mentor</a>
+                            <a href="become-a-sponsor.html" role="menuitem">Become a Sponsor</a>
+                        </div>
+                    </div>
+                    <a class="navlink navlink-desktop cursor-pointer" href="insight.html">Insight</a>
+                    <a class="navlink navlink-desktop cursor-pointer" href="events.html">Events</a>
+                    <a class="btn btn-primary nav-join cursor-pointer" href="contact.html">Join Us</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-[99] block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="menu"
+            class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg uppercase bg-[var(--color-green-dark)]/99 z-40"
+            data-menu>
+            <div class="wrapper py-6 grid gap-4">
+                <a class="navlink text-base py-2" href="index.html">Home</a>
+                <details class="mobile-dropdown">
+                    <summary>Community</summary>
+                    <a href="about.html">About Us</a>
+                    <a href="insight-list.html">Insights</a>
+                    <a href="resources.html">Resources</a>
+                </details>
+                <details class="mobile-dropdown">
+                    <summary>Collaborate</summary>
+                    <a href="events.html">Events</a>
+                    <a href="volunteer.html">Volunteer</a>
+                    <a href="partnership.html">Partner</a>
+                </details>
+                <details class="mobile-dropdown" open>
+                    <summary>Contribute</summary>
+                    <a href="mentor.html">Mentor</a>
+                    <a class="font-bold text-[var(--color-text)]" href="become-a-sponsor.html">Become a Sponsor</a>
+                </details>
+                <a class="navlink text-base py-2" href="events.html">Events</a>
+                <a class="btn btn-primary w-full justify-center mt-4" href="contact.html">Join Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-white">
+       
+
+        <!-- Hero -->
+        <section class="relative flex min-h-[360px] items-center overflow-hidden py-16 text-white lg:min-h-[430px]">
+            <img class="absolute inset-0 h-full w-full object-cover object-center"
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1800&q=80"
+                alt="Business partners shaking hands">
+            <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,26,43,0.92)_0%,rgba(4,26,43,0.72)_42%,rgba(4,26,43,0.08)_78%)]"></div>
+
+            <div class="wrapper relative z-10 w-full">
+                <div class="max-w-[650px]">
+                    <h1 class="text-[40px] font-bold leading-[1.08] tracking-normal text-white sm:text-[54px] lg:text-[60px]">
+                        Partner With Us.<br>Empower Our Community.
+                    </h1>
+                    <p class="mt-5 max-w-[540px] text-[18px] font-medium leading-[1.65] text-white">
+                        Support FTP-YYC and connect your brand with a vibrant community of Filipino tech professionals in Calgary.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap items-center gap-5">
+                        <a href="#sponsorship-levels"
+                            class="inline-flex min-h-[54px] items-center justify-center rounded-[6px] bg-[var(--color-yellow)] px-8 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-[#ffd663]">
+                            Become a Sponsor
+                        </a>
+                        <a href="#sponsor-benefits"
+                            class="inline-flex min-h-[54px] items-center justify-center gap-4 rounded-[6px] bg-white px-7 text-[16px] font-bold text-black shadow-sm transition-colors duration-200 hover:bg-white/90">
+                            Sponsorship Benefits
+                            <img src="./images/chevron-right-dark-figma.svg" alt="" class="h-[13px] w-2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Breadcrumb -->
+        <nav class="border-b border-black/10 bg-white" aria-label="Breadcrumb">
+            <div class="wrapper flex min-h-[58px] items-center gap-3 text-[14px] font-medium text-black/50">
+                <a href="index.html" class="transition-colors duration-200 hover:text-[var(--color-deep-blue)]">Home</a>
+                <span class="text-black/35" aria-hidden="true">&rsaquo;</span>
+                <span>Contribute</span>
+                <span class="text-black/35" aria-hidden="true">&rsaquo;</span>
+                <span aria-current="page">Become a Sponsor</span>
+            </div>
+        </nav>
+
+        <!-- Benefits -->
+        <section id="sponsor-benefits" class="py-10">
+            <div class="wrapper">
+                <h2 class="text-center text-[28px] font-bold leading-tight text-black">Why Sponsor FTP-YYC?</h2>
+                <div class="mt-7 grid gap-8 rounded-[10px] bg-white px-2 py-4 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+                    <article class="lg:border-r lg:border-black/15 lg:px-8">
+                        <span class="mx-auto flex size-20 items-center justify-center rounded-full bg-[#dceaff] text-[#1261aa]">
+                            <svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M16 21v-2a4 4 0 0 0-8 0v2" /><circle cx="12" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M2 21v-2a4 4 0 0 1 3-3.87M8 3.13a4 4 0 0 0 0 7.75" />
+                            </svg>
+                        </span>
+                        <h3 class="mt-5 text-[18px] font-bold leading-tight text-black">Community Impact</h3>
+                        <p class="mx-auto mt-3 max-w-[210px] text-[15px] leading-[1.55] text-black">Empower and uplift Filipino tech professionals.</p>
+                    </article>
+
+                    <article class="lg:border-r lg:border-black/15 lg:px-8">
+                        <span class="mx-auto flex size-20 items-center justify-center rounded-full bg-[#dff6ec] text-[#19a974]">
+                            <svg class="size-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M3 11v2h4l7 4V7l-7 4H3Zm15.5 1c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02ZM16 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77Z" />
+                            </svg>
+                        </span>
+                        <h3 class="mt-5 text-[18px] font-bold leading-tight text-black">Brand Visibility</h3>
+                        <p class="mx-auto mt-3 max-w-[230px] text-[15px] leading-[1.55] text-black">Showcase your brand to a highly engaged audience.</p>
+                    </article>
+
+                    <article class="lg:border-r lg:border-black/15 lg:px-8">
+                        <span class="mx-auto flex size-20 items-center justify-center rounded-full bg-[#eee8ff] text-[#6b45d7]">
+                            <svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="m11 17-2 2a3 3 0 0 1-4.2 0 3 3 0 0 1 0-4.2l4.6-4.6a3 3 0 0 1 4.2 0" />
+                                <path d="m13 7 2-2a3 3 0 0 1 4.2 0 3 3 0 0 1 0 4.2l-4.6 4.6a3 3 0 0 1-4.2 0" />
+                            </svg>
+                        </span>
+                        <h3 class="mt-5 text-[18px] font-bold leading-tight text-black">Meaningful Connections</h3>
+                        <p class="mx-auto mt-3 max-w-[230px] text-[15px] leading-[1.55] text-black">Build relationships with leaders and future talent.</p>
+                    </article>
+
+                    <article class="lg:px-8">
+                        <span class="mx-auto flex size-20 items-center justify-center rounded-full bg-[#fff1c7] text-[#d99a00]">
+                            <svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 19V9M10 19V5M16 19v-8M22 19H2" /><path d="m16 11 3-3 3 3" />
+                            </svg>
+                        </span>
+                        <h3 class="mt-5 text-[18px] font-bold leading-tight text-black">Long-Term Value</h3>
+                        <p class="mx-auto mt-3 max-w-[250px] text-[15px] leading-[1.55] text-black">Strengthen your brand through ongoing community engagement.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsorship Levels -->
+        <section id="sponsorship-levels" class="pb-10">
+            <div class="wrapper border-t border-black/15 pt-7">
+                <div class="mb-5">
+                    <h2 class="text-[30px] font-bold leading-tight text-black">Sponsorship Levels</h2>
+                    <p class="mt-3 text-[16px] leading-[1.5] text-black">Choose the level that best fits your goals and support our mission.</p>
+                </div>
+
+                <div class="grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+                    <article class="rounded-[8px] border border-black/15 bg-white p-7 shadow-sm">
+                        <div class="text-center">
+                            <span class="inline-flex rounded-[8px] bg-[#f0d4c5] px-4 py-2 text-[14px] font-bold text-[#7a3f21]">BRONZE</span>
+                            <span class="mx-auto mt-6 flex size-20 items-center justify-center rounded-full bg-[#d77f4e] text-white">
+                                <svg class="size-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="m12 3 2.7 5.47 6.03.88-4.37 4.26 1.03 6.01L12 16.79l-5.39 2.83 1.03-6.01-4.37-4.26 6.03-.88L12 3Z" />
+                                </svg>
+                            </span>
+                            <p class="mt-5 text-[32px] font-bold leading-tight text-black">$500</p>
+                            <p class="mt-1 text-[15px] text-black">One-time</p>
+                        </div>
+                        <ul class="mt-7 space-y-4 border-t border-black/15 pt-6 text-[15px] text-black">
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Logo on website</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Social media shoutout</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Event program recognition</li>
+                        </ul>
+                        <a href="contact.html" class="mt-10 inline-flex min-h-[48px] w-full items-center justify-center rounded-[6px] border border-black/15 bg-white px-5 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-black/5">Choose Bronze</a>
+                    </article>
+
+                    <article class="rounded-[8px] border border-black/15 bg-white p-7 shadow-sm">
+                        <div class="text-center">
+                            <span class="inline-flex rounded-[8px] bg-[#e5e7ea] px-4 py-2 text-[14px] font-bold text-[#3f4650]">SILVER</span>
+                            <span class="mx-auto mt-6 flex size-20 items-center justify-center rounded-full bg-[#aeb4bc] text-white">
+                                <svg class="size-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="m12 3 2.7 5.47 6.03.88-4.37 4.26 1.03 6.01L12 16.79l-5.39 2.83 1.03-6.01-4.37-4.26 6.03-.88L12 3Z" />
+                                </svg>
+                            </span>
+                            <p class="mt-5 text-[32px] font-bold leading-tight text-black">$1,000</p>
+                            <p class="mt-1 text-[15px] text-black">One-time</p>
+                        </div>
+                        <ul class="mt-7 space-y-4 border-t border-black/15 pt-6 text-[15px] text-black">
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>All Bronze benefits</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Logo on event materials</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Newsletter mention</li>
+                        </ul>
+                        <a href="contact.html" class="mt-10 inline-flex min-h-[48px] w-full items-center justify-center rounded-[6px] border border-black/15 bg-white px-5 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-black/5">Choose Silver</a>
+                    </article>
+
+                    <article class="rounded-[8px] border border-[var(--color-yellow)] bg-white p-7 shadow-sm">
+                        <div class="text-center">
+                            <span class="inline-flex rounded-[8px] bg-[#ffe2a3] px-4 py-2 text-[14px] font-bold text-[#b87000]">GOLD</span>
+                            <span class="mx-auto mt-6 flex size-20 items-center justify-center rounded-full bg-[var(--color-yellow)] text-white">
+                                <svg class="size-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="m12 3 2.7 5.47 6.03.88-4.37 4.26 1.03 6.01L12 16.79l-5.39 2.83 1.03-6.01-4.37-4.26 6.03-.88L12 3Z" />
+                                </svg>
+                            </span>
+                            <p class="mt-5 text-[32px] font-bold leading-tight text-black">$2,500</p>
+                            <p class="mt-1 text-[15px] text-black">One-time</p>
+                        </div>
+                        <ul class="mt-7 space-y-4 border-t border-black/15 pt-6 text-[15px] text-black">
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>All Silver benefits</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Booth at select events</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Featured sponsor highlight</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>2 event passes</li>
+                        </ul>
+                        <a href="contact.html" class="mt-10 inline-flex min-h-[48px] w-full items-center justify-center rounded-[6px] bg-[var(--color-yellow)] px-5 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-[#ffd663]">Choose Gold</a>
+                    </article>
+
+                    <article class="rounded-[8px] border border-black/15 bg-white p-7 shadow-sm">
+                        <div class="text-center">
+                            <span class="inline-flex rounded-[8px] bg-[#eee8ff] px-4 py-2 text-[14px] font-bold text-[#4520a8]">PLATINUM</span>
+                            <span class="mx-auto mt-6 flex size-20 items-center justify-center rounded-full bg-[#9a73e8] text-white">
+                                <svg class="size-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="m12 3 2.7 5.47 6.03.88-4.37 4.26 1.03 6.01L12 16.79l-5.39 2.83 1.03-6.01-4.37-4.26 6.03-.88L12 3Z" />
+                                </svg>
+                            </span>
+                            <p class="mt-5 text-[32px] font-bold leading-tight text-black">$5,000+</p>
+                            <p class="mt-1 text-[15px] text-black">Custom</p>
+                        </div>
+                        <ul class="mt-7 space-y-4 border-t border-black/15 pt-6 text-[15px] text-black">
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>All Gold benefits</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Speaking opportunity</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Custom partnership package</li>
+                            <li class="flex gap-3"><svg class="mt-0.5 size-4 shrink-0 text-[#19a974]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Year-round visibility</li>
+                        </ul>
+                        <a href="contact.html" class="mt-10 inline-flex min-h-[48px] w-full items-center justify-center rounded-[6px] border border-black/15 bg-white px-5 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-black/5">Contact Us</a>
+                    </article>
+                </div>
+
+                <p class="mt-8 flex items-center justify-center gap-3 text-center text-[15px] text-black/70">
+                    <svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" /><path d="M12 8h.01M11 12h1v5h1" />
+                    </svg>
+                    Custom sponsorship packages are available. Let's build something amazing together!
+                </p>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="pb-12">
+            <div class="wrapper">
+                <article class="relative grid gap-8 overflow-hidden rounded-[10px] bg-[#eef5ff] p-8 md:grid-cols-[1fr_1.3fr] md:items-center lg:p-10">
+                    <svg class="mx-auto h-[190px] w-full max-w-[360px] text-[#2a518b] md:h-[220px]" viewBox="0 0 360 230"
+                        fill="none" aria-hidden="true">
+                        <path d="M67 215V132c0-24 20-44 44-44h6c24 0 44 20 44 44v83" fill="#7eb0f2" />
+                        <circle cx="114" cy="57" r="34" fill="#102a56" />
+                        <path d="M205 215V132c0-24 20-44 44-44h6c24 0 44 20 44 44v83" fill="#d8e7ff" />
+                        <circle cx="252" cy="57" r="34" fill="#102a56" />
+                        <path d="M143 78c35 27 58 27 83 0" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
+                        <path d="M178 42c17-27 50-11 46 17 20-10 38 11 26 30-13 20-45 31-71 39-10-29-17-62-1-86Z" fill="#FFC940" />
+                        <path d="M161 27l-14-14M194 19V0M229 27l14-14" stroke="#102a56" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+
+                    <div class="relative z-10">
+                        <h2 class="text-[32px] font-bold leading-tight text-black">Ready to Make a Difference?</h2>
+                        <p class="mt-5 max-w-[620px] text-[18px] leading-[1.55] text-black">
+                            Partner with FTP-YYC and help us create more opportunities, connections, and impact in our community.
+                        </p>
+                        <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                            <a href="contact.html"
+                                class="inline-flex min-h-[54px] items-center justify-center rounded-[6px] bg-[var(--color-yellow)] px-9 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-[#ffd663]">
+                                Become a Sponsor
+                            </a>
+                            <a href="contact.html"
+                                class="inline-flex min-h-[54px] items-center justify-center rounded-[6px] border border-black/15 bg-white px-9 text-[16px] font-bold text-black transition-colors duration-200 hover:bg-black/5">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#101828] py-16 text-white">
+        <div class="wrapper flex flex-col gap-6">
+            <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-[272px_repeat(4,190px)] xl:gap-7">
+                <div class="flex flex-col gap-6 xl:h-[235px]">
+                    <img src="./images/footer-figma-logo.png" alt="FTP-YYC Logo"
+                        class="h-[37px] w-[189px] object-contain">
+                    <p class="font-['Inter'] text-[14px] font-normal leading-[1.4] tracking-[-0.154px] text-[#99a1af]">
+                        Filipino Tech Professionals of YYC (FTP-YYC) is a non-profit organization dedicated to
+                        supporting and
+                        empowering Filipino professionals and advocates within the technology industry in Calgary,
+                        Canada.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Organizations
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="about.html">About Us</a></li>
+                        <li><a class="footer-figma-link" href="about.html#mission">Mission &amp; Values</a></li>
+                        <li><a class="footer-figma-link" href="about.html#team">Our Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Registration
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="contact.html">Join Now</a></li>
+                        <li><a class="footer-figma-link" href="contact.html">Membership</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Get Involved
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="volunteer.html">Volunteer</a></li>
+                        <li><a class="footer-figma-link" href="become-a-sponsor.html">Sponsor</a></li>
+                        <li><a class="footer-figma-link" href="partnership.html">Partner</a></li>
+                        <li><a class="footer-figma-link" href="mentor.html">Mentor</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h3 class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-white">
+                        Legal Stuff
+                    </h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="footer-figma-link" href="#">Disclaimer</a></li>
+                        <li><a class="footer-figma-link" href="#">Financing</a></li>
+                        <li><a class="footer-figma-link" href="#">Privacy Policy</a></li>
+                        <li><a class="footer-figma-link" href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                <div class="flex flex-wrap items-center gap-[14px]">
+                    <p
+                        class="font-['Inter'] text-[18px] font-medium leading-[27px] tracking-[-0.4395px] text-[#ffc940]">
+                        Let's Connect!
+                    </p>
+                    <div class="flex h-10 items-center justify-center gap-4">
+                        <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]"
+                            href="#" aria-label="Facebook">
+                            <img src="./images/footer-social-facebook.svg" alt="" class="size-5">
+                        </a>
+                        <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]"
+                            href="#" aria-label="LinkedIn">
+                            <img src="./images/footer-social-linkedin.svg" alt="" class="size-5">
+                        </a>
+                        <a class="flex size-10 items-center justify-center rounded-[10px] bg-[#1e2939] transition-colors duration-200 hover:bg-[#26364f]"
+                            href="#" aria-label="Discord">
+                            <img src="./images/footer-social-discord.svg" alt="" class="size-5">
+                        </a>
+                    </div>
+                </div>
+
+                <form class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
+                    <label for="footer-email"
+                        class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">
+                        Stay updated
+                    </label>
+                    <div class="flex h-[42px] min-w-0 gap-2">
+                        <input id="footer-email"
+                            class="h-[42px] min-w-0 flex-1 rounded-[10px] border border-[#364153] bg-[#1e2939] px-4 py-2 font-['Inter'] text-[16px] font-normal tracking-[-0.3125px] text-white placeholder-white/50 outline-none transition-colors duration-200 focus:border-[#ffc940] sm:w-[190px]"
+                            type="email" placeholder="Enter your email" />
+                        <button
+                            class="h-[42px] w-[86px] shrink-0 rounded-[10px] bg-[#ffc940] font-['Inter'] text-[16px] font-medium leading-6 tracking-[-0.3125px] text-[#101828] transition-colors duration-200 hover:bg-[#ffd663]"
+                            type="submit">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="border-t border-[#1e2939] pt-[33px] text-center">
+                <p class="font-['Inter'] text-[14px] font-normal leading-5 tracking-[-0.1504px] text-[#99a1af]">
+                    © 2026 FTP-YYC. All rights reserved. | Privacy Policy | Acknowledgement
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
